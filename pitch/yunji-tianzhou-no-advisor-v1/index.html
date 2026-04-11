@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>晋文·云纪天舟｜联合创始人招商方案</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+    :root {
+      --bg0: #030101;
+      --bg1: #0A0404;
+      --bg2: #130606;
+      --bg3: #1C0808;
+      --border:     rgba(198,152,72,0.07);
+      --border-md:  rgba(198,152,72,0.13);
+      --border-hi:  rgba(198,152,72,0.26);
+      --gold:       #C59848;
+      --gold-hi:    #C8A85A;
+      --gold-lo:    #6B4E10;
+      --text-main:  #EAD4B8;
+      --text-mid:   #9A7050;
+      --text-dim:   #5A3820;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: var(--bg0);
+      color: var(--text-main);
+      overflow-x: hidden;
+      line-height: 1.9;
+    }
+
+    /* TOKENS */
+    .eyebrow {
+      font-size: 9px; letter-spacing: 5px; text-transform: uppercase;
+      color: var(--gold); opacity: 0.45; margin-bottom: 12px;
+    }
+    h2 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(20px, 2.5vw, 36px);
+      font-weight: 700; line-height: 1.2; margin-bottom: 5px;
+    }
+    h3 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 15px; font-weight: 600;
+      color: var(--gold); margin-bottom: 8px;
+    }
+    p { font-size: 13px; color: var(--text-mid); line-height: 1.95; }
+    .rule { width: 36px; height: 1px; background: var(--gold); margin: 14px 0 22px; }
+    .rule.c { margin: 14px auto 22px; }
+
+    /* SECTION */
+    section {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      justify-content: center;
+      padding: 68px 52px;
+      position: relative;
+    }
+    .container { max-width: 1020px; width: 100%; position: relative; z-index: 2; }
+
+    .pg {
+      position: absolute; top: 18px; right: 40px;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 76px; font-weight: 900;
+      color: rgba(198,152,72,0.03);
+      line-height: 1; user-select: none; pointer-events: none;
+    }
+    .pg-label {
+      position: absolute; top: 20px; left: 52px;
+      font-size: 9px; letter-spacing: 5px;
+      color: var(--gold); opacity: 0.25;
+    }
+
+    /* CARD */
+    .card {
+      background: linear-gradient(155deg, rgba(37,13,13,0.6), rgba(14,5,5,0.88));
+      border: 1px solid var(--border);
+      padding: 28px 24px;
+      position: relative;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .card:hover {
+      border-color: var(--border-md);
+      transform: translateY(-2px);
+    }
+
+    /* LIST */
+    .dot-list { list-style: none; margin-top: 14px; }
+    .dot-list li {
+      font-size: 12.5px; color: var(--text-mid);
+      padding: 6px 0 6px 18px;
+      border-bottom: 1px solid rgba(198,152,72,0.04);
+      position: relative;
+    }
+    .dot-list li:last-child { border-bottom: none; }
+    .dot-list li::before {
+      content: '◇'; position: absolute;
+      left: 0; top: 9px;
+      color: var(--gold); font-size: 7px; opacity: 0.6;
+    }
+
+    /* GRID */
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+
+    /* ═══ COVER ═══ */
+    .cover {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at 18% 28%, rgba(100,20,20,0.5) 0%, transparent 50%),
+        radial-gradient(ellipse at 82% 72%, rgba(198,152,72,0.04) 0%, transparent 45%),
+        radial-gradient(ellipse at 50% 95%, rgba(30,5,5,0.5) 0%, transparent 50%),
+        linear-gradient(175deg, #030101 0%, #0A0404 30%, #130606 65%, #030101 100%);
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; padding: 60px;
+      position: relative; overflow: hidden;
+    }
+    .cover::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        repeating-linear-gradient(90deg, rgba(198,152,72,0.009) 0, rgba(198,152,72,0.009) 1px, transparent 1px, transparent 100px),
+        repeating-linear-gradient(0deg, rgba(198,152,72,0.009) 0, rgba(198,152,72,0.009) 1px, transparent 1px, transparent 100px);
+      pointer-events: none;
+    }
+    .cv-rule {
+      width: 1px; height: 48px;
+      background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+      margin-bottom: 42px;
+    }
+    .cv-sub {
+      font-size: 9px; letter-spacing: 8px;
+      color: var(--gold); opacity: 0.5; margin-bottom: 18px;
+    }
+    .cover h1 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(42px, 8vw, 92px);
+      font-weight: 900; line-height: 1.05;
+      background: linear-gradient(135deg, var(--text-main) 0%, var(--gold-hi) 40%, var(--gold) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; margin-bottom: 6px;
+    }
+    .cover-type {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(13px, 1.4vw, 18px);
+      font-weight: 700; letter-spacing: 5px;
+      color: var(--gold); margin-top: 6px;
+    }
+    .cover-sub {
+      font-size: 12px; letter-spacing: 4px;
+      color: var(--text-mid); margin-top: 4px;
+    }
+    .cover-divider {
+      width: 1px; height: 50px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      margin: 32px auto;
+    }
+    .cover-keywords {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 8px; margin-top: 24px;
+    }
+    .kw {
+      padding: 4px 14px;
+      border: 1px solid rgba(198,152,72,0.15);
+      color: var(--gold); font-size: 11.5px;
+      letter-spacing: 1px;
+    }
+    .cover-note {
+      font-size: 11px; color: var(--text-dim);
+      letter-spacing: 1px; margin-top: 24px;
+    }
+    .cover-scroll {
+      font-size: 9px; letter-spacing: 4px;
+      color: var(--gold); opacity: 0.18; margin-top: 14px;
+    }
+
+    /* BG CYCLES */
+    .bg-a { background: linear-gradient(180deg, #030101 0%, #0A0404 50%, #030101 100%); }
+    .bg-b { background: linear-gradient(180deg, #030101 0%, #130606 38%, #030101 100%); }
+    .bg-c { background: linear-gradient(180deg, #030101 0%, #1C0808 35%, #030101 100%); }
+
+    /* HERO QUOTE BOX */
+    .quote-box {
+      margin-top: 32px;
+      padding: 30px 34px;
+      background: linear-gradient(135deg, rgba(37,13,13,0.6), rgba(14,5,5,0.85));
+      border: 1px solid rgba(198,152,72,0.1);
+      border-left: 3px solid var(--gold);
+      font-family: 'Noto Serif SC', serif;
+      font-size: 14px; color: var(--text-main);
+      line-height: 2.1; font-style: italic;
+    }
+
+    /* BULLET ROWS */
+    .brow {
+      display: flex; align-items: flex-start;
+      gap: 14px; padding: 16px 0;
+      border-bottom: 1px solid rgba(198,152,72,0.05);
+    }
+    .brow:last-child { border-bottom: none; }
+    .brow-n {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 10px; color: var(--gold);
+      opacity: 0.55; flex-shrink: 0;
+      margin-top: 2px; min-width: 16px;
+    }
+    .brow-t {
+      font-size: 13px; color: var(--text-mid); line-height: 1.8;
+    }
+    .brow-t strong { color: var(--gold-hi); font-style: normal; }
+
+    /* PROFILE CARD */
+    .profile-card {
+      background: linear-gradient(155deg, rgba(37,13,13,0.6), rgba(14,5,5,0.88));
+      border: 1px solid var(--border);
+      padding: 30px 28px;
+    }
+    .profile-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 20px; font-weight: 700;
+      color: var(--gold-hi); margin-bottom: 2px;
+    }
+    .profile-title {
+      font-size: 12px; color: var(--text-dim);
+      letter-spacing: 2px; margin-bottom: 14px;
+    }
+    .profile-tags {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      margin-top: 14px;
+    }
+    .ptag {
+      padding: 3px 10px;
+      border: 1px solid rgba(198,152,72,0.15);
+      color: var(--gold); font-size: 11px;
+    }
+
+    /* CULTURAL ADVISOR */
+    .art-card {
+      background: linear-gradient(155deg, rgba(37,13,13,0.6), rgba(14,5,5,0.88));
+      border: 1px solid var(--border);
+      padding: 30px 28px;
+    }
+    .art-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 22px; font-weight: 700;
+      color: var(--gold-hi); margin-bottom: 2px;
+    }
+    .art-subtitle {
+      font-size: 11px; letter-spacing: 3px;
+      color: var(--text-dim); margin-bottom: 14px;
+    }
+    .art-section {
+      margin-top: 14px;
+    }
+    .art-section h4 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 10px; letter-spacing: 3px;
+      color: var(--gold); opacity: 0.5; margin-bottom: 6px;
+    }
+    .art-quote {
+      margin-top: 16px;
+      padding: 14px 18px;
+      background: rgba(198,152,72,0.04);
+      border-left: 2px solid var(--gold);
+      font-family: 'Noto Serif SC', serif;
+      font-size: 12.5px; color: var(--gold-hi);
+      line-height: 1.9; font-style: italic;
+    }
+
+    /* PLATFORM ICONS */
+    .plat-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 28px; }
+    .plat-item {
+      text-align: center;
+      padding: 18px 10px;
+      background: linear-gradient(155deg, rgba(37,13,13,0.5), rgba(14,5,5,0.8));
+      border: 1px solid var(--border);
+      transition: border-color 0.3s;
+    }
+    .plat-item:hover { border-color: var(--border-md); }
+    .plat-icon { margin-bottom: 8px; }
+    .plat-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 11px; color: var(--text-main);
+    }
+
+    /* BUSINESS 4 */
+    .biz4 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 28px; }
+    .biz-card {
+      background: linear-gradient(155deg, rgba(37,13,13,0.55), rgba(14,5,5,0.85));
+      border: 1px solid var(--border);
+      padding: 24px 22px;
+      transition: border-color 0.3s;
+    }
+    .biz-card:hover { border-color: var(--border-md); }
+    .biz-n {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 10px; letter-spacing: 3px;
+      color: var(--gold); opacity: 0.5; margin-bottom: 6px;
+    }
+    .biz-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 14px; font-weight: 700;
+      color: var(--text-main); margin-bottom: 8px;
+    }
+    .biz-card p { font-size: 12px; }
+
+    /* TIER CARDS */
+    .tier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 32px; }
+    .tier-card {
+      background: linear-gradient(155deg, rgba(37,13,13,0.6), rgba(14,5,5,0.88));
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .tier-card:hover {
+      border-color: var(--border-hi);
+      transform: translateY(-3px);
+    }
+    .tier-top {
+      padding: 18px 22px 14px;
+      border-bottom: 1px solid rgba(198,152,72,0.06);
+    }
+    .tier-top.ac1 { border-top: 2px solid rgba(107,78,16,0.65); }
+    .tier-top.ac2 { border-top: 2px solid rgba(198,152,72,0.35); }
+    .tier-top.ac3 { border-top: 2px solid rgba(198,152,72,0.6); }
+    .tier-top.ac4 { border-top: 2px solid var(--gold); }
+    .tier-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 15px; font-weight: 700;
+      color: var(--gold-hi); margin-bottom: 4px;
+    }
+    .tier-price-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+    .tier-price {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 26px; font-weight: 900;
+      color: var(--gold); line-height: 1;
+    }
+    .tier-seats { font-size: 11px; color: var(--text-dim); }
+    .tier-seats span { color: var(--gold-hi); font-weight: 600; }
+    .tier-body { padding: 14px 22px 20px; }
+    .tier-body h4 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 10px; letter-spacing: 2px;
+      color: var(--gold); opacity: 0.55; margin-bottom: 7px;
+    }
+    .tier-body p { font-size: 11.5px; color: var(--text-dim); line-height: 1.75; }
+
+    /* HIGHLIGHT BOX */
+    .hl-box {
+      background: linear-gradient(135deg, rgba(37,13,13,0.5), rgba(14,5,5,0.82));
+      border: 1px solid rgba(198,152,72,0.08);
+      padding: 24px 28px; margin-top: 20px;
+    }
+    .hl-box h4 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 12px; font-weight: 600;
+      color: var(--gold-hi); margin-bottom: 10px;
+    }
+
+    /* FLOW BOX */
+    .flow-row {
+      display: flex; align-items: center;
+      margin-top: 30px;
+    }
+    .flow-item {
+      flex: 1; text-align: center;
+      padding: 20px 14px;
+      background: linear-gradient(155deg, rgba(37,13,13,0.5), rgba(14,5,5,0.8));
+      border: 1px solid var(--border);
+    }
+    .flow-item:first-child { border-radius: 6px 0 0 6px; }
+    .flow-item:last-child { border-radius: 0 6px 6px 0; }
+    .flow-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 13px; font-weight: 600;
+      color: var(--gold-hi); margin-bottom: 4px;
+    }
+    .flow-desc { font-size: 11px; color: var(--text-dim); }
+    .flow-arrow { color: var(--gold); font-size: 14px; opacity: 0.3; flex-shrink: 0; }
+
+    /* PATH STEPS */
+    .psteps {
+      display: flex; flex-direction: column;
+      margin-top: 32px;
+      position: relative;
+    }
+    .psteps::before {
+      content: ''; position: absolute;
+      left: 16px; top: 32px; bottom: 32px;
+      width: 1px;
+      background: linear-gradient(to bottom,
+        transparent, rgba(198,152,72,0.14),
+        rgba(198,152,72,0.14), transparent);
+    }
+    .pstep {
+      display: flex; align-items: flex-start;
+      gap: 20px; padding: 10px 0;
+    }
+    .pstep-n {
+      width: 34px; height: 34px;
+      border: 1px solid rgba(198,152,72,0.2);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 11px; font-weight: 700;
+      color: var(--gold); flex-shrink: 0;
+      background: var(--bg0);
+      position: relative; z-index: 1;
+      transition: background 0.3s, color 0.3s;
+    }
+    .pstep:hover .pstep-n { background: var(--gold); color: var(--bg0); }
+    .pstep h4 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 13px; font-weight: 600;
+      color: var(--text-main); margin-bottom: 2px;
+    }
+    .pstep p { font-size: 11.5px; color: var(--text-dim); }
+
+    /* CLOSING */
+    .closing {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at 50% 40%, rgba(80,15,15,0.4) 0%, transparent 60%),
+        radial-gradient(ellipse at 20% 80%, rgba(198,152,72,0.03) 0%, transparent 50%),
+        linear-gradient(175deg, #030101 0%, #130606 50%, #030101 100%);
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; padding: 80px 52px;
+      position: relative;
+    }
+    .closing::before {
+      content: ''; position: absolute;
+      top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(198,152,72,0.18), transparent);
+    }
+    .closing::after {
+      content: ''; position: absolute;
+      bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(198,152,72,0.18), transparent);
+    }
+    .cl-brand {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 24px; font-weight: 900;
+      letter-spacing: 6px; color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .cl-rule {
+      width: 68px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 26px auto;
+    }
+    .cl-body {
+      max-width: 600px;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 14px; line-height: 2.2;
+      color: var(--text-mid); font-style: italic;
+    }
+    .cl-body strong { color: var(--gold-hi); font-style: normal; }
+    .cl-body em { color: var(--text-main); font-style: normal; }
+    .cl-co {
+      font-size: 12px; color: var(--text-dim);
+      letter-spacing: 2px; margin-top: 36px;
+    }
+    .cl-date {
+      font-size: 10px; color: var(--text-dim);
+      opacity: 0.5; margin-top: 5px; letter-spacing: 3px;
+    }
+    .cl-end {
+      font-size: 9px; letter-spacing: 5px;
+      color: var(--gold); opacity: 0.35;
+      margin-top: 44px;
+    }
+
+    /* NAV */
+    .nav-dots {
+      position: fixed; right: 20px; top: 50%;
+      transform: translateY(-50%);
+      display: flex; flex-direction: column;
+      gap: 6px; z-index: 200;
+    }
+    .nav-dot {
+      width: 4px; height: 4px; border-radius: 50%;
+      background: rgba(198,152,72,0.08);
+      border: 1px solid rgba(198,152,72,0.08);
+      cursor: pointer; transition: all 0.3s; padding: 0;
+    }
+    .nav-dot.active {
+      background: var(--gold); border-color: var(--gold);
+      transform: scale(1.8);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 860px) {
+      section { padding: 52px 20px; }
+      .cover { padding: 48px 20px; }
+      .pg { right: 16px; font-size: 52px; }
+      .pg-label { left: 20px; }
+      .g2, .g3, .g4, .tier-grid, .biz4, .plat-grid { grid-template-columns: 1fr; }
+      .flow-row { flex-direction: column; }
+      .flow-item { border-radius: 6px !important; }
+      .flow-arrow { transform: rotate(90deg); }
+      .nav-dots { display: none; }
+      .closing { padding: 60px 20px; }
+    }
+    @media print {
+      .nav-dots { display: none; }
+      section { min-height: auto; page-break-after: always; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav-dots" id="navDots"></nav>
+
+<!-- COVER -->
+<section class="cover" id="s0">
+  <div class="cv-rule"></div>
+  <div class="cv-sub">云纪天舟 · 生态圈</div>
+  <h1>晋文·云纪天舟</h1>
+  <div class="cover-type">联合创始人招商方案</div>
+  <div class="cover-sub">平台级生态服务商 · 文化商业新样板</div>
+  <div class="cover-divider"></div>
+  <div class="cover-keywords">
+    <span class="kw">昆明</span>
+    <span class="kw">云南生活方式</span>
+    <span class="kw">文化IP</span>
+    <span class="kw">生态平台</span>
+    <span class="kw">产业共建</span>
+  </div>
+  <div class="cover-note">招商路演 · 企业家沟通 · 项目说明会 · 合作洽谈</div>
+  <div class="cover-scroll">SCROLL TO EXPLORE</div>
+</section>
+
+<!-- P02 总定位 -->
+<section id="s1" class="bg-b">
+  <div class="pg-label">02</div>
+  <div class="pg">02</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 02</div>
+    <h2>项目总定位</h2>
+    <div class="rule"></div>
+    <div class="quote-box">平台级生态服务商定位</div>
+    <div style="margin-top:24px;">
+      <div class="brow"><div class="brow-n">01</div><div class="brow-t">立足<strong>平台级生态服务商</strong>定位</div></div>
+      <div class="brow"><div class="brow-n">02</div><div class="brow-t">以深厚文化体系为底蕴、产业资源禀赋为根基</div></div>
+      <div class="brow"><div class="brow-n">03</div><div class="brow-t">以<strong>文化铸魂、资源聚力、科技赋能</strong>为核心方法</div></div>
+      <div class="brow"><div class="brow-n">04</div><div class="brow-t">聚合<strong>优质产业要素</strong>与合作网络</div></div>
+      <div class="brow"><div class="brow-n">04</div><div class="brow-t">为企业搭建<strong>一站式资源对接</strong>与价值转化平台</div></div>
+      <div class="brow"><div class="brow-n">05</div><div class="brow-t">赋能<strong>品牌升级、业态创新与商业共赢</strong></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- P03 城市背景 -->
+<section id="s2" class="bg-a">
+  <div class="pg-label">03</div>
+  <div class="pg">03</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 03</div>
+    <h2>城市背景与项目表达</h2>
+    <div class="rule"></div>
+    <div class="quote-box">昆明 · 湖滨春城 · 山水花都<br>以玫瑰汇客厅呈现"有一种叫云南的生活"</div>
+    <div class="g2" style="margin-top:24px;">
+      <div class="card">
+        <h3>城市气质</h3>
+        <ul class="dot-list">
+          <li>立足昆明城市气质与云南生活方式表达</li>
+          <li>以玫瑰汇客厅作为城市情感载体与会客空间</li>
+          <li>传递云南独有的生活美学、社交氛围与文化温度</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>项目表达</h3>
+        <ul class="dot-list">
+          <li>"城市气质 + 项目气质 + 文化气质"的统一表达</li>
+          <li>为高端企业家合作建立更具辨识度的项目入口</li>
+          <li>以湖滨春城、山水花都的自然禀赋为底色</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- P04 核心团队 -->
+<section id="s3" class="bg-c">
+  <div class="pg-label">04</div>
+  <div class="pg">04</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 04</div>
+    <h2>核心团队</h2>
+    <div class="rule"></div>
+
+    <div class="profile-card" style="margin-top:28px; max-width:700px;">
+      <div class="profile-name">吴加添（逸尘）</div>
+      <div class="profile-title">项目发起人 · 总操盘手</div>
+      <div style="font-size:13px; color:var(--text-mid); margin-bottom:4px;">电话：13888105577</div>
+      <div class="profile-tags">
+        <span class="ptag">玫瑰汇客厅创始人</span>
+        <span class="ptag">中国民族贸易促进会云南筹备组</span>
+        <span class="ptag">正和岛海邻（云南）运营中心主任</span>
+        <span class="ptag">中国—东盟（老挝）合作委员会中老经济合作首席代表</span>
+        <span class="ptag">昆明市社区家庭服务业行业协会副会长</span>
+        <span class="ptag">国药汉方深度合作伙伴</span>
+        <span class="ptag">云南晋文产业发展（集团）有限公司董事长</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- P05 文化总顾问 -->
+<!-- P06 项目理念 -->
+<section id="s4" class="bg-b">
+  <div class="pg-label">05</div>
+  <div class="pg">05</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 05</div>
+    <h2>项目理念</h2>
+    <div class="rule"></div>
+    <div class="quote-box">携手彼此，以爱成就<br>爱拼才会赢</div>
+    <div style="margin-top:24px;">
+      <div class="brow"><div class="brow-t"><strong>爱</strong>代表温度，<strong>拼</strong>代表努力——有温度、有热爱的奋斗，方能成就精彩人生</div></div>
+      <div class="brow"><div class="brow-t">项目坚持<strong>长期主义、共建共享、专业协同</strong></div></div>
+      <div class="brow"><div class="brow-t">以<strong>同频合作、彼此成就、共创价值</strong>为合作基础</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- P07 线上平台 -->
+<section id="s5" class="bg-c">
+  <div class="pg-label">08–11</div>
+  <div class="pg">08</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 08–11</div>
+    <h    <h2>线上平台生态体系</h2>
+    <div class="rule"></div>
+    <div class="quote-box">构建高端企业家服务矩阵</div>
+
+    <div class="g2" style="margin-top:24px;">
+      <div class="card">
+        <h3>平台结构</h3>
+        <ul class="dot-list">
+          <li>创始人专区</li>
+          <li>联合创始人专区</li>
+          <li>智库专家专区</li>
+          <li>区域运营中心</li>
+          <li>会员制体系</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>核心功能</h3>
+        <ul class="dot-list">
+          <li>AI智能匹配</li>
+          <li>直播赋能</li>
+          <li>深度访谈</li>
+          <li>圈层链接</li>
+          <li>资源撮合</li>
+          <li>商机互通</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hl-box">
+      <h4>平台目标</h4>
+      <p style="font-size:12.5px;">打造线上线下一体化生态闭环 · 实现资源精准对接与价值高效转化 · 形成可持续运营的高端合作网络</p>
+    </div>
+  </div>
+</section>
+
+<!-- P08 线下场景 -->
+<section id="s6" class="bg-a">
+  <div class="pg-label">12</div>
+  <div class="pg">12</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 12</div>
+    <h2>线下场景载体</h2>
+    <div class="rule"></div>
+    <div class="quote-box">依托云南省民族博物馆国家级文化科研楼</div>
+
+    <div class="biz4">
+      <div class="biz-card">
+        <div class="biz-n">01</div>
+        <div class="biz-title">文旅商康养板块</div>
+        <p>文旅接待、商务会客、康养体验、私宴交流、会务活动</p>
+      </div>
+      <div class="biz-card">
+        <div class="biz-n">02</div>
+        <div class="biz-title">中非跨境贸易与金芒果选品中心</div>
+        <p>跨境贸易、优质选品、渠道分销、品牌输出</p>
+      </div>
+      <div class="biz-card">
+        <div class="biz-n">03</div>
+        <div class="biz-title">融媒体传播与直播电商板块</div>
+        <p>内容传播、品牌推广、直播销售、访谈输出</p>
+      </div>
+      <div class="biz-card">
+        <div class="biz-n">04</div>
+        <div class="biz-title">潮流场景运营板块</div>
+        <p>房车露营、匹克球、潮玩市集、赛事活动、青年社交</p>
+      </div>
+    </div>
+
+    <div class="hl-box">
+      <h4>线下场景价值</h4>
+      <p style="font-size:12.5px;">有空间承载 · 有业态组合 · 有运营内容 · 有传播场景 · 有商业转化</p>
+    </div>
+  </div>
+</section>
+
+<!-- P09-P12 四大业态 -->
+<section id="s7" class="bg-b">
+  <div class="pg-label">13</div>
+  <div class="pg">13</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 13</div>
+    <h2>四大核心业态</h2>
+    <div class="rule"></div>
+
+    <div class="g2" style="margin-top:24px;">
+      <div class="card">
+        <h3>业态一：文旅商康养板块</h3>
+        <ul class="dot-list">
+          <li>集文旅接待、商务会客、康养体验、私宴交流、会务活动于一体</li>
+          <li>形成高频使用、高频转化、高频传播的复合空间</li>
+          <li>可承接品牌展示、商务洽谈、资源对接、活动落地等需求</li>
+          <li>适合高净值客群、企业家圈层、合作伙伴长期使用</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>业态二：中非跨境贸易与金芒果选品中心</h3>
+        <ul class="dot-list">
+          <li>打造区域特色产品与供应链合作平台</li>
+          <li>形成跨境贸易、优质选品、渠道分销、品牌输出等综合功能</li>
+          <li>整合货源、订单、渠道与平台流量资源</li>
+          <li>具备平台招商、供应链协同与跨境合作拓展能力</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>业态三：融媒体传播与直播电商板块</h3>
+        <ul class="dot-list">
+          <li>构建内容传播、品牌推广、直播销售、访谈输出的综合媒介能力</li>
+          <li>为项目及合作伙伴提供宣传、展示、转化、引流一体化服务</li>
+          <li>支持品牌产品优先直播推广与内容传播</li>
+          <li>形成可持续的媒体流量入口与商业变现入口</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>业态四：潮流场景运营板块</h3>
+        <ul class="dot-list">
+          <li>涵盖：房车露营 / 匹克球 / 潮玩市集 / 赛事活动 / 青年社交场景</li>
+          <li>兼具流量属性、场景属性和社交属性</li>
+          <li>可打造活动、赛事、节庆、打卡、传播的综合体验</li>
+          <li>适合品牌冠名、活动招商、场景植入与用户互动</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- P13 生态逻辑 -->
+<section id="s8" class="bg-c">
+  <div class="pg-label">14–17</div>
+  <div class="pg">14</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 14–17</div>
+    <h2>项目生态逻辑</h2>
+    <div class="rule"></div>
+    <div class="quote-box">线上线下一体化 · 价值闭环</div>
+
+    <div class="flow-row" style="margin-top:28px;">
+      <div class="flow-item">
+        <div class="flow-title">线上平台</div>
+        <div class="flow-desc">连接 · 展示 · 撮合 · 传播</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-item">
+        <div class="flow-title">线下空间</div>
+        <div class="flow-desc">承接 · 体验 · 转化 · 落地</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-item">
+        <div class="flow-title">四大业态</div>
+        <div class="flow-desc">彼此联动 · 生态闭环</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-item">
+        <div class="flow-title">全域生态</div>
+        <div class="flow-desc">AI · 直播 · 访谈 · 选品 · 活动</div>
+      </div>
+    </div>
+
+    <div class="hl-box" style="margin-top:20px;">
+      <h4>核心理念</h4>
+      <p style="font-size:12.5px;">通过AI、直播、访谈、选品、活动等工具提升效率，打造具有持续生命力的全域生态系统。</p>
+    </div>
+  </div>
+</section>
+
+<!-- P14 投资人权益总览 -->
+<section id="s9" class="bg-a">
+  <div class="pg-label">18</div>
+  <div class="pg">18</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 18</div>
+    <h2>投资人权益总览</h2>
+    <div class="rule"></div>
+    <div class="quote-box">四大板块权益结构</div>
+
+    <div class="g2" style="margin-top:24px;">
+      <div class="card">
+        <h3>四大板块</h3>
+        <ul class="dot-list">
+          <li>文旅商康养板块权益</li>
+          <li>中非跨境贸易与金芒果选品中心权益</li>
+          <li>融媒体与直播电商板块权益</li>
+          <li>潮流场景运营板块权益</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>权益逻辑</h3>
+        <ul class="dot-list">
+          <li>以<strong style="color:var(--gold-hi)">出资</strong>参与板块收益</li>
+          <li>以<strong style="color:var(--gold-hi)">资源</strong>参与平台招商</li>
+          <li>以<strong style="color:var(--gold-hi)">合作</strong>参与场景经营</li>
+          <li>以<strong style="color:var(--gold-hi)">共建共享</strong>项目成长红利</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- P15-P18 四大板块权益 -->
+<section id="s10" class="bg-b">
+  <div class="pg-label">20</div>
+  <div class="pg">20</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 20</div>
+    <h2>四大板块投资人权益</h2>
+    <div class="rule"></div>
+
+    <div class="g2" style="margin-top:24px;">
+      <div class="card">
+        <h3>一、文旅商康养板块</h3>
+        <ul class="dot-list">
+          <li>享有板块年度经营收益分红</li>
+          <li>优先使用康养、商务、私宴、会务空间</li>
+          <li>产品服务可植入场景并导流</li>
+          <li>参与运营规划审议</li>
+          <li>参与项目活动、会务和商务对接机会</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>二、中非跨境贸易与选品中心</h3>
+        <ul class="dot-list">
+          <li>享有平台管理费、公共发展基金收益分配</li>
+          <li>产品优先入驻选品中心及供应链体系</li>
+          <li>共享跨境渠道、货源及订单资源</li>
+          <li>优先参与跨境合作项目</li>
+          <li>获得平台招商与贸易协同机会</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>三、融媒体与直播电商板块</h3>
+        <ul class="dot-list">
+          <li>享有直播及短视频运营收益分成</li>
+          <li>享有平台宣发、场景及流量扶持</li>
+          <li>品牌产品优先直播推广</li>
+          <li>参与运营策略研讨</li>
+          <li>共享内容传播、品牌曝光与销售转化资源</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>四、潮流场景运营板块</h3>
+        <ul class="dot-list">
+          <li>享有场景运营、活动招商收益分红</li>
+          <li>优先冠名承办场内活动及赛事</li>
+          <li>品牌展示与用户互动场景植入</li>
+          <li>参与活动策划与招商分成</li>
+          <li>获取年轻化流量场景中的品牌价值放大机会</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- P19 专属赋能 -->
+<section id="s11" class="bg-c">
+  <div class="pg-label">21</div>
+  <div class="pg">21</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 21</div>
+    <h2>联合创始人专属赋能</h2>
+    <div class="rule"></div>
+
+    <div class="g2" style="margin-top:24px;">
+      <div class="card">
+        <h3>深度访谈与渠道匹配</h3>
+        <ul class="dot-list">
+          <li>为联合创始人开展专属访谈</li>
+          <li>梳理资源与需求，建立生态资源库</li>
+          <li>实现精准对接、双向赋能</li>
+          <li>增强合作伙伴品牌表达与资源曝光</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>订单采购与推广支持</h3>
+        <ul class="dot-list">
+          <li>晋文公司向每位联合创始人定向采购不低于其出资额<strong style="color:var(--gold-hi)">2—3倍</strong>的产品/服务</li>
+          <li>按内部股东价执行</li>
+          <li>用于项目运营、品牌传播与市场推广</li>
+          <li>超额部分另行商定合作方案</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- P20 合作原则 -->
+<section id="s12" class="bg-a">
+  <div class="pg-label">22–25</div>
+  <div class="pg">22</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 22–25</div>
+    <h2>合作原则</h2>
+    <div class="rule"></div>
+    <div class="quote-box">专业分工 · 资源互补 · 透明合规 · 利他共赢</div>
+    <div style="margin-top:24px;">
+      <div class="brow"><div class="brow-n">01</div><div class="brow-t">项目方负责<strong>整体操盘、运营管理、资源整合与风控</strong></div></div>
+      <div class="brow"><div class="brow-n">02</div><div class="brow-t">联合创始人以资金入股，共享项目<strong>收益、场景权益、渠道资源</strong>与发展红利</div></div>
+      <div class="brow"><div class="brow-n">03</div><div class="brow-t">项目<strong>独立运营、风险隔离</strong></div></div>
+      <div class="brow"><div class="brow-n">04</div><div class="brow-t">合作均签订<strong>正式法律协议</strong>，保障联合创始人投资安全</div></div>
+      <div class="brow"><div class="brow-t" style="font-style:italic;">和对的人一起，让美好自然发生</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- P21 席位规划 -->
+<section id="s13" class="bg-b">
+  <div class="pg-label">26</div>
+  <div class="pg">26</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 26</div>
+    <h2>联合创始人席位规划</h2>
+    <div class="rule"></div>
+    <div class="quote-box">限量席位 · 分层配置 · 价值稀缺</div>
+
+    <div class="flow-row" style="margin-top:28px;">
+      <div class="flow-item">
+        <div class="flow-title" style="color:var(--gold-lo);">28.8万</div>
+        <div class="flow-desc">启航 · 8席</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-title" style="color:rgba(198,152,72,0.6);">66.6万</div>
+        <div class="flow-desc">精进 · 6席</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-title" style="color:var(--gold);">98.8万</div>
+        <div class="flow-desc">核心 · 3席</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-title" style="color:var(--gold-hi);">168万</div>
+        <div class="flow-desc">战略 · 1席</div>
+      </div>
+    </div>
+
+    <div class="hl-box">
+      <h4>设计原则</h4>
+      <p style="font-size:12.5px;">总量有限 · 满额即止 · 长期不增补 · 不同席位对应不同合作深度、资源能力和权益配置</p>
+    </div>
+  </div>
+</section>
+
+<!-- P22-P25 四个席位详解 -->
+<section id="s14" class="bg-c">
+  <div class="pg-label">27</div>
+  <div class="pg">27</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 27</div>
+    <h2>四大席位详解</h2>
+    <div class="rule"></div>
+
+    <div class="tier-grid">
+      <!-- 启航 -->
+      <div class="tier-card">
+        <div class="tier-top ac1">
+          <div class="tier-name">启航联合创始人</div>
+          <div class="tier-price-row">
+            <span class="tier-price">28.8</span><span style="font-size:11px;color:var(--text-dim);">万元</span>
+            <span class="tier-seats">招募 <span>8</span> 席</span>
+          </div>
+        </div>
+        <div class="tier-body">
+          <h4>权益配置</h4>
+          <p>项目及对应板块年度分红；全场景优先使用与基础品牌展示；参与项目交流，对接基础资源；本金优先回收保障；出资额2—3倍基础订单采购；线上平台高级会员权限。</p>
+          <h4 style="margin-top:10px;">适合对象</h4>
+          <p>希望轻量进入项目、先布局的人群；看好项目基础逻辑的企业家与投资人。</p>
+        </div>
+      </div>
+      <!-- 精进 -->
+      <div class="tier-card">
+        <div class="tier-top ac2">
+          <div class="tier-name">精进联合创始人</div>
+          <div class="tier-price-row">
+            <span class="tier-price">66.6</span><span style="font-size:11px;color:var(--text-dim);">万元</span>
+            <span class="tier-seats">招募 <span>6</span> 席</span>
+          </div>
+        </div>
+        <div class="tier-body">
+          <h4>权益配置</h4>
+          <p>项目及板块更高比例分红；参与运营会议，知悉经营情况；招商、联营、商户合作专项分成；优先参与高端活动，对接政企及跨境资源；本金优先回收与分期回购保障；2—3倍订单采购，优先纳入供应链；线上平台区域合伙人，专属访谈与流量扶持。</p>
+          <h4 style="margin-top:10px;">适合对象</h4>
+          <p>具备品牌资源、渠道资源或一定行业基础的合作伙伴；希望更深度参与项目经营和资源协同的人群。</p>
+        </div>
+      </div>
+      <!-- 核心 -->
+      <div class="tier-card">
+        <div class="tier-top ac3">
+          <div class="tier-name">核心联合创始人</div>
+          <div class="tier-price-row">
+            <span class="tier-price">98.8</span><span style="font-size:11px;color:var(--text-dim);">万元</span>
+            <span class="tier-seats">招募 <span>3</span> 席</span>
+          </div>
+        </div>
+        <div class="tier-body">
+          <h4>权益配置</h4>
+          <p>参与核心板块运营决策与顶层优化；高比例分红及板块专项收益；选品中心平台管理费收益分成；优先对接高端招商资源与全链条收益；本金100%优先回收与规范退出；2—3倍订单采购，专属访谈与重点渠道匹配；线上平台创始人智库席位，专属直播间与AI数据分析。</p>
+          <h4 style="margin-top:10px;">适合对象</h4>
+          <p>具备资源整合能力、商务落地能力和行业影响力的合作伙伴；希望参与项目核心生态共建的人群。</p>
+        </div>
+      </div>
+      <!-- 战略 -->
+      <div class="tier-card">
+        <div class="tier-top ac4">
+          <div class="tier-name">战略联合创始人</div>
+          <div class="tier-price-row">
+            <span class="tier-price">168</span><span style="font-size:11px;color:var(--text-dim);">万元</span>
+            <span class="tier-seats">招募 <span>1</span> 席</span>
+          </div>
+        </div>
+        <div class="tier-body">
+          <h4>权益配置</h4>
+          <p>参与项目顶层设计与长期战略规划；全板块收益分红（含跨境、融媒体全生态）；选品中心公共发展基金收益分成；优先对接深度政企与核心跨境资源；本金优先保障与项目整体增值收益；2—3倍订单采购，战略级渠道匹配与全场景推广；线上平台战略生态合作伙伴，区域运营主导权与AI定制服务。</p>
+          <h4 style="margin-top:10px;">适合对象</h4>
+          <p>具备战略视野、资源整合能力和长期绑定意愿的核心合作伙伴；拥有政企、平台招商、跨界整合能力的人士。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- P26 资金使用 -->
+<section id="s15" class="bg-a">
+  <div class="pg-label">28</div>
+  <div class="pg">28</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 28</div>
+    <h2>资金使用方向</h2>
+    <div class="rule"></div>
+    <div class="quote-box">专款专用 · 服务场景落地与长期运营</div>
+
+    <div style="margin-top:24px;">
+      <div class="brow"><div class="brow-n">01</div><div class="brow-t">场地租金及物业管理</div></div>
+      <div class="brow"><div class="brow-n">02</div><div class="brow-t">空间装修改造与场景营造</div></div>
+      <div class="brow"><div class="brow-n">03</div><div class="brow-t">团队运营与市场推广</div></div>
+      <div class="brow"><div class="brow-n">04</div><div class="brow-t">直播电商、数字化设备及选品中心建设</div></div>
+      <div class="brow"><div class="brow-n">04</div><div class="brow-t">联合创始人产品采购与供应链合作</div></div>
+      <div class="brow"><div class="brow-n">05</div><div class="brow-t">线上平台研发、AI功能及直播访谈矩阵</div></div>
+      <div class="brow"><div class="brow-n">06</div><div class="brow-t"><strong>流动资金储备，优先兑付本金与收益</strong></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- P27 合作对象 -->
+<section id="s16" class="bg-b">
+  <div class="pg-label">29</div>
+  <div class="pg">29</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 29</div>
+    <h2>合作对象</h2>
+    <div class="rule"></div>
+    <div class="quote-box">适合加入的人群</div>
+    <div style="margin-top:24px;">
+      <div class="brow"><div class="brow-n">01</div><div class="brow-t">认同<strong>长期价值、稳健经营</strong>的企业家与投资人</div></div>
+      <div class="brow"><div class="brow-n">02</div><div class="brow-t">拥有优质产品品牌，希望进入<strong>平台供应链</strong>的企业主</div></div>
+      <div class="brow"><div class="brow-n">03</div><div class="brow-t">寻求<strong>产业标的</strong>、链接高端资源的经营者</div></div>
+      <div class="brow"><div class="brow-n">04</div><div class="brow-t">文创、康养、酒类、跨境贸易、直播电商等<strong>品牌方</strong></div></div>
+      <div class="brow"><div class="brow-n">04</div><div class="brow-t">具备客户、渠道、政企资源，愿<strong>长期共建</strong>的合作伙伴</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- P28 合作流程 -->
+<section id="s17" class="bg-c">
+  <div class="pg-label">28</div>
+  <div class="pg">28</div>
+  <div class="container">
+    <div class="eyebrow">招商方案 · 28</div>
+    <h2>合作流程</h2>
+    <div class="rule"></div>
+    <div class="quote-box" style="font-size:13px;">意向沟通 → 项目详解 → 访谈匹配 → 资质确认 → 协议签署 → 出资备案 → 权益落地 → 长期共建</div>
+
+    <div class="psteps">
+      <div class="pstep"><div class="pstep-n">1</div><div><h4>意向沟通</h4><p>初步了解需求与方向匹配</p></div></div>
+      <div class="pstep"><div class="pstep-n">2</div><div><h4>项目详解</h4><p>全方位讲解项目定位、权益与商业模型</p></div></div>
+      <div class="pstep"><div class="pstep-n">3</div><div><h4>创始人访谈与渠道匹配</h4><p>梳理资源与需求，建立生态资源库，实现精准对接</p></div></div>
+      <div class="pstep"><div class="pstep-n">4</div><div><h4>资质确认</h4><p>双向评估，确保资源与需求精准匹配</p></div></div>
+      <div class="pstep"><div class="pstep-n">5</div><div><h4>协议签署</h4><p>明确各方权益、义务与退出机制</p></div></div>
+      <div class="pstep"><div class="pstep-n">6</div><div><h4>出资备案</h4><p>资金到位，完成工商合规手续</p></div></div>
+      <div class="pstep"><div class="pstep-n">7</div><div><h4>权益落地</h4><p>场景权益、经营权益全面兑现</p></div></div>
+      <div class="pstep"><div class="pstep-n">8</div><div><h4>长期共建</h4><p>深度参与生态圈建设，共享长期增长红利</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- P29 结语 -->
+<section class="closing" id="s18">
+  <div class="cv-rule"></div>
+  <div class="eyebrow" style="margin-bottom:12px;">结语</div>
+  <div class="cl-brand">晋文·云纪天舟</div>
+  <div class="cl-rule"></div>
+  <div class="cl-body">
+    <p style="margin-bottom:14px;">
+      和对的人一起，让美好自然发生
+    </p>
+    <p style="margin-bottom:14px;">
+      晋文·云纪天舟，不止于一处文化商业空间，<br>
+      更是<em>可持续、可成长、可共赢</em>的产业生态。
+    </p>
+    <p style="margin-bottom:14px;">
+      以湖滨春城、山水花都为底色，以玫瑰汇客厅为载体，<br>
+      呈现"<strong>有一种叫云南的生活</strong>"。
+    </p>
+    <p>
+      以文化为根基，以资源为纽带，以携手彼此、以爱成就为初心，<br>
+      诚邀志同道合者，<em>共筑平台、共享机遇、共赴长远</em>。
+    </p>
+  </div>
+  <div class="cl-co">云南晋文产业发展（集团）有限公司</div>
+  <div class="cl-date">2026年4月</div>
+  <div class="cl-end">JINWEN · YUNJI TIANZHOU</div>
+  <div class="cv-rule" style="margin-top:44px; margin-bottom:0;"></div>
+</section>
+
+<script>
+  var sections = document.querySelectorAll('section[id]');
+  var nav = document.getElementById('navDots');
+  sections.forEach(function(s, i) {
+    var dot = document.createElement('button');
+    dot.className = 'nav-dot';
+    dot.setAttribute('aria-label', 'Section ' + i);
+    dot.onclick = function() { s.scrollIntoView({ behavior: 'smooth' }); };
+    nav.appendChild(dot);
+  });
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        var idx = [].slice.call(sections).indexOf(e.target);
+        document.querySelectorAll('.nav-dot').forEach(function(d, i) {
+          d.classList.toggle('active', i === idx);
+        });
+      }
+    });
+  }, { threshold: 0.35 });
+  sections.forEach(function(s) { io.observe(s); });
+</script>
+
+</body>
+</html>

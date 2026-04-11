@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>晋文·云纪天舟｜云南省民族博物馆科研楼生态圈</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+    :root {
+      --bg-void:    #080404;
+      --bg-deep:    #110606;
+      --bg-mid:     #1E0C0C;
+      --bg-card:    #2A1414;
+      --bg-card-hi: #361A1A;
+      --border:     rgba(201,168,76,0.12);
+      --border-hi:  rgba(201,168,76,0.3);
+      --gold:       #C9A84C;
+      --gold-b:     #DFC05E;
+      --gold-d:     #8B6914;
+      --text-main:  #EAD9C4;
+      --text-mid:   #B09080;
+      --text-dim:   #6B4A3A;
+      --red-glow:   rgba(120,30,20,0.25);
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: var(--bg-void);
+      color: var(--text-main);
+      overflow-x: hidden;
+      line-height: 1.9;
+    }
+
+    /* ═══ TOKENS ═══ */
+    .eyebrow {
+      font-size: 10px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      opacity: 0.6;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(26px, 3.5vw, 44px);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    p { font-size: 14.5px; color: var(--text-mid); line-height: 1.95; }
+    .rule { width: 48px; height: 1px; background: var(--gold); margin: 20px 0 28px; }
+    .rule.c { margin: 20px auto 28px; }
+
+    /* ═══ SECTION SHARED ═══ */
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 60px;
+      position: relative;
+    }
+    .container { max-width: 1080px; width: 100%; position: relative; z-index: 2; }
+
+    .watermark {
+      position: absolute;
+      top: 24px; right: 48px;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 88px; font-weight: 900;
+      color: rgba(201,168,76,0.045);
+      line-height: 1; user-select: none; pointer-events: none;
+    }
+    .w-label {
+      position: absolute;
+      top: 26px; left: 60px;
+      font-size: 10px; letter-spacing: 5px;
+      color: var(--gold); opacity: 0.35;
+    }
+
+    /* ═══ CARDS ═══ */
+    .card {
+      background: linear-gradient(155deg, rgba(42,20,20,0.7), rgba(17,6,6,0.85));
+      border: 1px solid var(--border);
+      padding: 34px 30px;
+      position: relative;
+      transition: border-color 0.35s, transform 0.35s;
+      overflow: hidden;
+    }
+    .card:hover {
+      border-color: var(--border-hi);
+      transform: translateY(-4px);
+    }
+    .card-icon { font-size: 28px; margin-bottom: 14px; }
+
+    /* ═══ LISTS ═══ */
+    .dot-list { list-style: none; margin-top: 18px; }
+    .dot-list li {
+      font-size: 14px; color: var(--text-mid);
+      padding: 7px 0 7px 20px;
+      border-bottom: 1px solid rgba(201,168,76,0.05);
+      position: relative;
+    }
+    .dot-list li:last-child { border-bottom: none; }
+    .dot-list li::before {
+      content: '◆'; position: absolute;
+      left: 0; top: 10px;
+      color: var(--gold); font-size: 8px; opacity: 0.7;
+    }
+
+    /* ═══ GRIDS ═══ */
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+
+    /* ═══ ═══ ═══ ═══
+       HERO
+    ═══ ═══ ═══ ═══ */
+    .hero {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at 15% 25%, rgba(90,20,20,0.55) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 75%, rgba(201,168,76,0.05) 0%, transparent 45%),
+        radial-gradient(ellipse at 55% 95%, rgba(40,10,10,0.5) 0%, transparent 50%),
+        linear-gradient(175deg, #080404 0%, #110606 35%, #1E0C0C 65%, #080404 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        repeating-linear-gradient(90deg, rgba(201,168,76,0.012) 0, rgba(201,168,76,0.012) 1px, transparent 1px, transparent 100px),
+        repeating-linear-gradient(0deg, rgba(201,168,76,0.012) 0, rgba(201,168,76,0.012) 1px, transparent 1px, transparent 100px);
+      pointer-events: none;
+    }
+    .h-rule {
+      width: 1px; height: 56px;
+      background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+      margin-bottom: 48px;
+    }
+    .h-sub {
+      font-size: 11px; letter-spacing: 8px;
+      color: var(--gold); opacity: 0.65; margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(42px, 7vw, 88px);
+      font-weight: 900; line-height: 1.1;
+      background: linear-gradient(135deg, var(--text-main) 0%, var(--gold-b) 45%, var(--gold) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    .hero-tagline {
+      font-size: 15px; letter-spacing: 3px;
+      color: var(--text-mid); margin-top: 6px;
+    }
+    .hero-divider {
+      width: 1px; height: 64px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      margin: 40px auto;
+    }
+    .hero-intro {
+      max-width: 640px;
+      font-size: 14px; color: var(--text-mid);
+      line-height: 2.1; font-style: italic;
+      margin-top: 0;
+    }
+    .hero-scroll {
+      font-size: 10px; letter-spacing: 4px;
+      color: var(--gold); opacity: 0.25; margin-top: 12px;
+    }
+
+    /* ═══ ═══ ═══ ═══
+       S01 — 项目定位
+    ═══ ═══ ═══ ═══ */
+    #s01 { background: linear-gradient(180deg, #080404 0%, #110606 50%, #080404 100%); }
+
+    .manifesto {
+      margin-top: 44px;
+      padding: 36px 40px;
+      background: linear-gradient(135deg, rgba(42,20,20,0.6), rgba(17,6,6,0.8));
+      border: 1px solid rgba(201,168,76,0.12);
+      border-left: 3px solid var(--gold);
+      font-family: 'Noto Serif SC', serif;
+      font-size: 15px;
+      color: var(--text-main);
+      line-height: 2.1;
+      font-style: italic;
+    }
+
+    .scene-tags {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      margin-top: 36px;
+    }
+    .scene-tag {
+      padding: 6px 18px;
+      border: 1px solid rgba(201,168,76,0.2);
+      color: var(--gold); font-size: 13px;
+      letter-spacing: 1px;
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .scene-tag:hover {
+      background: rgba(201,168,76,0.08);
+      border-color: rgba(201,168,76,0.45);
+    }
+
+    /* ═══ ═══ ═══ ═══
+       S02 — 核心判断
+    ═══ ═══ ═══ ═══ */
+    #s02 { background: linear-gradient(180deg, #080404 0%, #1E0C0C 40%, #080404 100%); }
+
+    .judgment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 44px; }
+
+    .judgment-card {
+      background: linear-gradient(155deg, rgba(42,20,20,0.65), rgba(17,6,6,0.8));
+      border: 1px solid var(--border);
+      padding: 36px 32px;
+      position: relative;
+      transition: border-color 0.35s, transform 0.35s;
+    }
+    .judgment-card:hover {
+      border-color: var(--border-hi);
+      transform: translateY(-3px);
+    }
+    .jc-num {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 42px; font-weight: 900;
+      color: rgba(201,168,76,0.12);
+      position: absolute; top: 20px; right: 24px;
+      line-height: 1;
+    }
+    .jc-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 16px; font-weight: 700;
+      color: var(--gold-b); margin-bottom: 14px;
+    }
+    .jc-desc { font-size: 13.5px; color: var(--text-mid); line-height: 1.9; }
+
+    .ability-row {
+      display: flex; gap: 10px; flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .ability-tag {
+      padding: 3px 12px;
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.15);
+      color: var(--gold-b); font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* ═══ ═══ ═══ ═══
+       S03 — 关键优势
+    ═══ ═══ ═══ ═══ */
+    #s03 { background: linear-gradient(180deg, #080404 0%, #110606 50%, #080404 100%); }
+
+    .advantage-card {
+      background: linear-gradient(155deg, rgba(42,20,20,0.6), rgba(17,6,6,0.8));
+      border: 1px solid var(--border);
+      padding: 34px 30px;
+      transition: border-color 0.35s, transform 0.35s;
+    }
+    .advantage-card:hover {
+      border-color: var(--border-hi);
+      transform: translateY(-4px);
+    }
+    .adv-icon { font-size: 30px; margin-bottom: 14px; }
+    .adv-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--text-main); margin-bottom: 12px;
+    }
+    .adv-sub {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 13px; color: var(--gold); opacity: 0.7;
+      margin-bottom: 14px;
+    }
+
+    /* ═══ ═══ ═══ ═══
+       S04 — 合作逻辑
+    ═══ ═══ ═══ ═══ */
+    #s04 { background: linear-gradient(180deg, #080404 0%, #1E0C0C 40%, #080404 100%); }
+
+    .logic-items {
+      display: flex; flex-direction: column;
+      gap: 0; margin-top: 44px;
+      position: relative;
+    }
+    .logic-item {
+      display: flex; align-items: flex-start;
+      gap: 24px; padding: 28px 0;
+      border-bottom: 1px solid rgba(201,168,76,0.06);
+    }
+    .logic-item:last-child { border-bottom: none; }
+    .logic-dot {
+      width: 10px; height: 10px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      flex-shrink: 0; margin-top: 6px;
+      transition: background 0.3s;
+    }
+    .logic-item:hover .logic-dot { background: var(--gold); }
+    .logic-text {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 16px; color: var(--text-main);
+      line-height: 1.85;
+    }
+    .logic-text em { color: var(--gold-b); font-style: normal; }
+
+    /* ═══ ═══ ═══ ═══
+       S05 — 席位设计
+    ═══ ═══ ═══ ═══ */
+    #s05 { background: linear-gradient(180deg, #080404 0%, #110606 50%, #080404 100%); }
+
+    .seat-hero {
+      background: linear-gradient(135deg, rgba(42,20,20,0.7), rgba(17,6,6,0.85));
+      border: 1px solid rgba(201,168,76,0.18);
+      padding: 40px 44px;
+      display: flex; align-items: center; gap: 48px;
+      margin-top: 40px;
+    }
+    .seat-number {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 72px; font-weight: 900;
+      color: var(--gold);
+      line-height: 1; flex-shrink: 0;
+    }
+    .seat-label {
+      font-size: 11px; letter-spacing: 3px;
+      color: var(--gold); opacity: 0.6; margin-bottom: 6px;
+    }
+    .seat-note {
+      font-size: 14px; color: var(--text-mid);
+      line-height: 1.8;
+    }
+
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .tier-card {
+      background: linear-gradient(155deg, rgba(42,20,20,0.6), rgba(17,6,6,0.8));
+      border: 1px solid var(--border);
+      padding: 28px 20px;
+      text-align: center;
+      transition: border-color 0.35s, transform 0.35s;
+    }
+    .tier-card:hover {
+      border-color: var(--border-hi);
+      transform: translateY(-3px);
+    }
+    .tier-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 14px; font-weight: 700;
+      color: var(--gold-b); margin-bottom: 8px;
+    }
+    .tier-desc {
+      font-size: 12px; color: var(--text-mid);
+      line-height: 1.7;
+    }
+
+    /* ═══ ═══ ═══ ═══
+       S06 — 价值矩阵
+    ═══ ═══ ═══ ═══ */
+    #s06 { background: linear-gradient(180deg, #080404 0%, #1E0C0C 40%, #080404 100%); }
+
+    .value-matrix {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 44px;
+    }
+    .vm-card {
+      background: linear-gradient(155deg, rgba(42,20,20,0.65), rgba(17,6,6,0.8));
+      border: 1px solid var(--border);
+      padding: 38px 36px;
+      position: relative;
+      transition: border-color 0.35s, transform 0.35s;
+    }
+    .vm-card:hover {
+      border-color: var(--border-hi);
+      transform: translateY(-3px);
+    }
+    .vm-icon { font-size: 32px; margin-bottom: 14px; }
+    .vm-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 18px; font-weight: 700;
+      color: var(--text-main); margin-bottom: 16px;
+    }
+
+    /* ═══ ═══ ═══ ═══
+       S07 — 资金使用
+    ═══ ═══ ═══ ═══ */
+    #s07 { background: linear-gradient(180deg, #080404 0%, #110606 50%, #080404 100%); }
+
+    .fund-bar-container {
+      margin-top: 48px;
+      position: relative;
+    }
+    .fund-bar-bg {
+      height: 2px;
+      background: rgba(201,168,76,0.08);
+      border-radius: 1px;
+      position: relative;
+    }
+    .fund-bar-fill {
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold-d), var(--gold), var(--gold-b));
+      border-radius: 1px;
+      position: absolute; top: 0; left: 0;
+      width: 20%;
+      transition: width 1.2s ease;
+    }
+    .fund-items {
+      display: flex;
+      margin-top: -8px;
+    }
+    .fund-item {
+      flex: 1; text-align: center;
+      position: relative;
+    }
+    .fund-dot {
+      width: 8px; height: 8px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      margin: 20px auto 12px;
+      background: var(--bg-void);
+      position: relative; z-index: 1;
+      transition: background 0.3s;
+    }
+    .fund-item:hover .fund-dot { background: var(--gold); }
+    .fund-num {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 9px; letter-spacing: 2px;
+      color: var(--gold); opacity: 0.4; margin-bottom: 6px;
+    }
+    .fund-text { font-size: 13px; color: var(--text-mid); line-height: 1.5; }
+
+    .fund-quote {
+      margin-top: 56px;
+      padding: 28px 40px;
+      background: linear-gradient(90deg,
+        rgba(201,168,76,0.04) 0%,
+        rgba(201,168,76,0.08) 50%,
+        rgba(201,168,76,0.04) 100%);
+      border-top: 1px solid rgba(201,168,76,0.12);
+      border-bottom: 1px solid rgba(201,168,76,0.12);
+      text-align: center;
+    }
+    .fund-quote p {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 15px; color: var(--gold-b);
+      line-height: 2; font-style: italic;
+    }
+
+    /* ═══ ═══ ═══ ═══
+       S08 — 合作伙伴 & S09 路径
+    ═══ ═══ ═══ ═══ */
+    #s08 { background: linear-gradient(180deg, #080404 0%, #1E0C0C 40%, #080404 100%); }
+    #s09 { background: linear-gradient(180deg, #080404 0%, #110606 50%, #080404 100%); }
+
+    .partner-item {
+      display: flex; align-items: flex-start;
+      gap: 18px; padding: 26px 28px;
+      background: linear-gradient(155deg, rgba(42,20,20,0.5), rgba(17,6,6,0.75));
+      border: 1px solid var(--border);
+      transition: border-color 0.3s, transform 0.3s;
+      margin-top: 16px;
+    }
+    .partner-item:hover {
+      border-color: var(--border-hi);
+      transform: translateX(4px);
+    }
+    .partner-icon { font-size: 28px; flex-shrink: 0; line-height: 1; }
+    .partner-item h4 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 15px; font-weight: 600;
+      color: var(--text-main); margin-bottom: 6px;
+    }
+    .partner-item p { font-size: 13px; }
+
+    .path-track {
+      display: flex; flex-direction: column;
+      gap: 0; margin-top: 44px;
+      position: relative;
+    }
+    .path-track::before {
+      content: ''; position: absolute;
+      left: 23px; top: 44px; bottom: 44px;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(201,168,76,0.2), rgba(201,168,76,0.2), transparent);
+    }
+    .path-step {
+      display: flex; align-items: flex-start;
+      gap: 26px; padding: 14px 0;
+    }
+    .path-num {
+      width: 48px; height: 48px;
+      border: 1px solid rgba(201,168,76,0.28);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 15px; font-weight: 700;
+      color: var(--gold); flex-shrink: 0;
+      background: var(--bg-void);
+      position: relative; z-index: 1;
+      transition: background 0.3s, color 0.3s;
+    }
+    .path-step:hover .path-num { background: var(--gold); color: var(--bg-void); }
+    .path-content h4 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 16px; font-weight: 600;
+      color: var(--text-main); margin-bottom: 3px;
+    }
+    .path-content p { font-size: 13px; color: var(--text-dim); }
+
+    /* ═══ ═══ ═══ ═══
+       S10 — 结语
+    ═══ ═══ ═══ ═══ */
+    .closing {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at 50% 40%, rgba(80,20,20,0.45) 0%, transparent 60%),
+        radial-gradient(ellipse at 25% 80%, rgba(201,168,76,0.04) 0%, transparent 50%),
+        linear-gradient(175deg, #080404 0%, #1E0C0C 50%, #080404 100%);
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; padding: 80px 60px;
+      position: relative;
+    }
+    .closing::before {
+      content: ''; position: absolute;
+      top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.25), transparent);
+    }
+    .closing::after {
+      content: ''; position: absolute;
+      bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.25), transparent);
+    }
+    .c-brand {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 28px; font-weight: 900;
+      letter-spacing: 6px; color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .c-rule {
+      width: 80px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 32px auto;
+    }
+    .c-body {
+      max-width: 680px;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 16px; line-height: 2.2;
+      color: var(--text-mid); font-style: italic;
+    }
+    .c-body strong { color: var(--gold-b); font-style: normal; }
+    .c-body em { color: var(--text-main); font-style: normal; }
+    .c-end {
+      font-size: 11px; letter-spacing: 5px;
+      color: var(--gold); opacity: 0.5;
+      margin-top: 52px;
+    }
+
+    /* ═══ NAV ═══ */
+    .nav-dots {
+      position: fixed; right: 26px; top: 50%;
+      transform: translateY(-50%);
+      display: flex; flex-direction: column;
+      gap: 10px; z-index: 200;
+    }
+    .nav-dot {
+      width: 5px; height: 5px; border-radius: 50%;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.15);
+      cursor: pointer; transition: all 0.3s; padding: 0;
+    }
+    .nav-dot.active {
+      background: var(--gold); border-color: var(--gold);
+      transform: scale(1.7);
+    }
+
+    /* ═══ RESPONSIVE ═══ */
+    @media (max-width: 860px) {
+      section { padding: 60px 26px; }
+      .hero { padding: 50px 26px; }
+      .watermark { right: 22px; font-size: 60px; }
+      .w-label { left: 26px; }
+      .g2, .g3, .g4, .tier-grid, .value-matrix { grid-template-columns: 1fr; }
+      .judgment-grid { grid-template-columns: 1fr; }
+      .fund-items { flex-wrap: wrap; }
+      .fund-item { flex: 0 0 33%; }
+      .seat-hero { flex-direction: column; text-align: center; gap: 16px; }
+      .nav-dots { display: none; }
+      .closing { padding: 60px 26px; }
+    }
+    @media print {
+      .nav-dots { display: none; }
+      section { min-height: auto; page-break-after: always; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav-dots" id="navDots"></nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="s0">
+  <div class="h-rule"></div>
+  <div class="h-sub">云纪天舟 · 生态圈</div>
+  <h1>晋文·云纪天舟</h1>
+  <p class="hero-tagline">云南省民族博物馆科研楼生态圈</p>
+  <div class="hero-divider"></div>
+  <p class="hero-intro">
+    以云南民族文化IP为入口，以文旅商康养融合生态为载体，<br>
+    以专业化运营和资源整合为核心，打造一个兼具<br>
+    <strong style="color:var(--gold-b)">品牌势能、产业协同与长期价值</strong>的高品质合作平台。
+  </p>
+  <div class="hero-scroll">SCROLL TO EXPLORE</div>
+</section>
+
+<!-- ═══ S01 — 项目定位 ═══ -->
+<section id="s01">
+  <div class="w-label">01</div>
+  <div class="watermark">01</div>
+  <div class="container">
+    <div class="eyebrow">SECTION 01</div>
+    <h2>项目定位</h2>
+    <div class="rule"></div>
+
+    <div class="manifesto">
+      "晋文·云纪天舟"不是一个单点项目，而是一个围绕<em>文化IP、产业场景、商业运营与资源协同</em>所构建的复合型生态平台。<br><br>
+      项目立足云南省民族博物馆文化资源，结合云南文旅产业基础，围绕文旅商康养、社交餐饮、房车露营、匹克球、星光潮玩市集、直播电商等场景，形成<em>可持续运营、可持续引流、可持续变现</em>的产业组合。
+    </div>
+
+    <div class="scene-tags">
+      <span class="scene-tag">文旅商康养</span>
+      <span class="scene-tag">社交餐饮</span>
+      <span class="scene-tag">房车露营</span>
+      <span class="scene-tag">匹克球</span>
+      <span class="scene-tag">星光潮玩市集</span>
+      <span class="scene-tag">直播电商</span>
+      <span class="scene-tag">民族文化IP</span>
+      <span class="scene-tag">产业协同</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S02 — 核心判断 ═══ -->
+<section id="s02">
+  <div class="w-label">02</div>
+  <div class="watermark">02</div>
+  <div class="container">
+    <div class="eyebrow">SECTION 02</div>
+    <h2>项目的核心判断</h2>
+    <div class="rule"></div>
+
+    <div class="judgment-grid">
+      <div class="judgment-card">
+        <div class="jc-num">01</div>
+        <div class="jc-title">有明确的文化入口</div>
+        <div class="jc-desc">项目背后不是空泛概念，而是有清晰的民族文化IP和区域文化基础。天然具备识别度、传播性与品牌背书。</div>
+      </div>
+      <div class="judgment-card">
+        <div class="jc-num">02</div>
+        <div class="jc-title">有完整的产业场景</div>
+        <div class="jc-desc">项目不是单一业态，而是多个业态协同构成的生态体系。</div>
+        <div class="ability-row">
+          <span class="ability-tag">能引流</span>
+          <span class="ability-tag">能承接</span>
+          <span class="ability-tag">能复购</span>
+          <span class="ability-tag">能延展</span>
+          <span class="ability-tag">能长期经营</span>
+        </div>
+      </div>
+      <div class="judgment-card">
+        <div class="jc-num">03</div>
+        <div class="jc-title">有高质量的圈层接口</div>
+        <div class="jc-desc">项目未来不只是服务游客和消费者，更重要的是链接企业家、商协会、政企资源和跨区域合作机会。这决定了项目的商业上限。</div>
+      </div>
+      <div class="judgment-card">
+        <div class="jc-num">04</div>
+        <div class="jc-title">有持续运营的逻辑</div>
+        <div class="jc-desc">真正有价值的项目，不是看开业当天的热闹，而是看三年、五年后的持续经营能力。本项目在结构设计上，重视的是长期价值，而不是短期流量。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S03 — 关键优势 ═══ -->
+<section id="s03">
+  <div class="w-label">03</div>
+  <div class="watermark">03</div>
+  <div class="container">
+    <div class="eyebrow">SECTION 03</div>
+    <h2>关键优势</h2>
+    <div class="rule"></div>
+
+    <div class="g3" style="margin-top:40px;">
+      <div class="advantage-card">
+        <div class="adv-icon">🏷️</div>
+        <div class="adv-title">IP价值清晰</div>
+        <div class="adv-sub">民族文化 · 博物馆背书 · 地域厚度</div>
+        <p>云南民族文化本身就具有内容厚度与传播张力。叠加博物馆资源、地域文化与生活方式表达，项目更容易形成独特品牌认知。</p>
+      </div>
+      <div class="advantage-card">
+        <div class="adv-icon">🎯</div>
+        <div class="adv-title">场景组合有层次</div>
+        <div class="adv-sub">复合布局 · 多维人群 · 持续经营</div>
+        <p>项目不是简单"做空间"，而是围绕不同人群和不同消费场景做复合布局：</p>
+        <div class="dot-list" style="margin-top:12px;">
+          <li>商务接待</li>
+          <li>论坛活动 / 私宴社交</li>
+          <li>康养办公 / 露营休闲</li>
+          <li>赛事互动 / 潮玩消费</li>
+        </div>
+      </div>
+      <div class="advantage-card">
+        <div class="adv-icon">📡        <div class="adv-title">流量入口具备传播性</div>
+        <div class="adv-sub">房车露营 · 匹克球 · 潮玩市集 · 直播电商</div>
+        <p>这些板块天然具备内容传播属性。"线上可讲、线下可看、社交可传"——这是当代商业项目的关键能力。</p>
+      </div>
+      <div class="advantage-card">
+        <div class="adv-icon">⚙️</div>
+        <div class="adv-title">商业模型更有弹性</div>
+        <div class="adv-sub">多元收益 · 抗风险 · 可延展</div>
+        <p>项目收益不依赖单一来源，由多个模块共同支撑：空间经营、活动经营、商户合作、品牌联动、联营分成、场景使用、数字化转化。</p>
+      </div>
+      <div class="advantage-card">
+        <div class="adv-icon">🌏</div>
+        <div class="adv-title">区域延展空间大</div>
+        <div class="adv-sub">东盟通道 · 跨境合作 · 区域联动</div>
+        <p>借助中国—东盟通道与跨境合作空间，项目可以从本地文化场景，进一步延展到更广阔的商务合作和区域联动层面。</p>
+      </div>
+      <div class="advantage-card">
+        <div class="adv-icon">🔒</div>
+        <div class="adv-title">席位控制保质量</div>
+        <div class="adv-sub">18席 · 满额即止 · 稀缺性保障</div>
+        <p>严格控制联合创始人席位数量，保障席位价值、资源稀缺性与合作质量，让每位伙伴的参与都具备真实分量。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S04 — 合作逻辑 ═══ -->
+<section id="s04">
+  <div class="w-label">04</div>
+  <div class="watermark">04</div>
+  <div class="container">
+    <div class="eyebrow">SECTION 04</div>
+    <h2>合作逻辑</h2>
+    <div class="rule"></div>
+    <p style="max-width:640px; font-size:15px; margin-top:8px;">
+      项目坚持<strong style="color:var(--gold-b)">专业分工、资源互补、长期共建</strong>的合作思路，以透明、合规、可持续为基础，与志同道合的伙伴共同做大做久。
+    </p>
+    <div class="logic-items">
+      <div class="logic-item">
+        <div class="logic-dot"></div>
+        <div class="logic-text">项目方负责<em>整体操盘、运营管理和资源整合</em></div>
+      </div>
+      <div class="logic-item">
+        <div class="logic-dot"></div>
+        <div class="logic-text">合作伙伴以<em>资金、资源、渠道、品牌</em>等方式参与共建</div>
+      </div>
+      <div class="logic-item">
+        <div class="logic-dot"></div>
+        <div class="logic-text">所有合作建立在<em>透明、合规、可持续</em>的基础上</div>
+      </div>
+      <div class="logic-item">
+        <div class="logic-dot"></div>
+        <div class="logic-text"><em>控制席位数量</em>，保障项目质量和合作效率</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S05 — 席位设计 ═══ -->
+<section id="s05">
+  <div class="w-label">05</div>
+  <div class="watermark">05</div>
+  <div class="container">
+    <div class="eyebrow">SECTION 05</div>
+    <h2>联合创始人席位设计</h2>
+    <div class="rule"></div>
+
+    <div class="seat-hero">
+      <div class="seat-number">18</div>
+      <div>
+        <div class="seat-label">总席位</div>
+        <div class="seat-note">
+          <strong style="color:var(--gold-b)">满额即止</strong> · 保证席位价值、资源稀缺性与合作质量<br>
+          席位有限，先入为主，结构清晰，路径明确
+        </div>
+      </div>
+    </div>
+
+    <div class="tier-grid" style="margin-top:28px;">
+      <div class="tier-card">
+        <div class="tier-name">启航联合创始人</div>
+        <div class="tier-desc">基础参与<br>建立合作关系<br>首批生态共建者</div>
+      </div>
+      <div class="tier-card">
+        <div class="tier-name">精进联合创始人</div>
+        <div class="tier-desc">更深度参与<br>扩大协同价值<br>扩大合作范围</div>
+      </div>
+      <div class="tier-card">
+        <div class="tier-name">核心联合创始人</div>
+        <div class="tier-desc">参与生态共建<br>享受更强联动权益<br>深度资源绑定</div>
+      </div>
+      <div class="tier-card">
+        <div class="tier-name">战略联合创始人</div>
+        <div class="tier-desc">核心资源型合作<br>享受最高层级配置<br>长期价值共创</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S06 — 价值矩阵 ═══ -->
+<section id="s06">
+  <div class="w-label">06</div>
+  <div class="watermark">06</div>
+  <div class="container">
+    <div class="eyebrow">SECTION 06</div>
+    <h2>联合创始人的主要价值</h2>
+    <div class="rule"></div>
+
+    <div class="value-matrix">
+      <div class="vm-card">
+        <div class="vm-icon">💰</div>
+        <div class="vm-title">资本价值</div>
+        <ul class="dot-list">
+          <li>实缴出资本金优先回收安排</li>
+          <li>按协议参与年度利润分配</li>
+          <li>参与平台招商、商户合作、联营业务收益</li>
+        </ul>
+      </div>
+      <div class="vm-card">
+        <div class="vm-icon">🔗</div>
+        <div class="vm-title">资源价值</div>
+        <ul class="dot-list">
+          <li>接入高端企业家圈层</li>
+          <li>对接商协会、政企与跨界合作资源</li>
+          <li>获得品牌合作与高净值客户链接机会</li>
+        </ul>
+      </div>
+      <div class="vm-card">
+        <div class="vm-icon">🏟️</div>
+        <div class="vm-title">场景价值</div>
+        <ul class="dot-list">
+          <li>享有办公、康养、会场、露营、球场、市集等多场景使用权限</li>
+          <li>获得项目场景内的优先展示、优先预约、优先合作机会</li>
+        </ul>
+      </div>
+      <div class="vm-card">
+        <div class="vm-icon">📊</div>
+        <div class="vm-title">经营价值</div>
+        <ul class="dot-list">
+          <li>参与项目产品、空间、活动、平台招商的联动收益</li>
+          <li>共享项目方专业运营、品牌推广与流量扶持</li>
+        </ul>
+      </div>
+      <div class="vm-card" style="grid-column: 1 / -1;">
+        <div class="vm-icon">🔄</div>
+        <div class="vm-title">流动性安排</div>
+        <div style="display:flex; gap:32px; flex-wrap:wrap; margin-top:8px;">
+          <div>
+            <h4 style="font-family:'Noto Serif SC',serif; font-size:14px; color:var(--gold-b); margin-bottom:6px;">锁定期</h4>
+            <p style="font-size:13px;">设定合理锁定期<br>保障项目稳定推进</p>
+          </div>
+          <div>
+            <h4 style="font-family:'Noto Serif SC',serif; font-size:14px; color:var(--gold-b); margin-bottom:6px;">内部转让</h4>
+            <p style="font-size:13px;">锁定期满后可按协议<br>内部转让或申请回购</p>
+          </div>
+          <div>
+            <h4 style="font-family:'Noto Serif SC',serif; font-size:14px; color:var(--gold-b); margin-bottom:6px;">资本化退出</h4>
+            <p style="font-size:13px;">后续资本化阶段<br>享有相应退出安排</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S07 — 资金使用方向 ═══ -->
+<section id="s07">
+  <div class="w-label">07</div>
+  <div class="watermark">07</div>
+  <div class="container" style="text-align:center;">
+    <div class="eyebrow">SECTION 07</div>
+    <h2>资金使用方向</h2>
+    <div class="rule c"></div>
+
+    <div class="fund-bar-container" style="margin-top:52px;">
+      <div class="fund-bar-bg">
+        <div class="fund-bar-fill" id="fundBar"></div>
+      </div>
+      <div class="fund-items">
+        <div class="fund-item">
+          <div class="fund-dot"></div>
+          <div class="fund-num">01</div>
+          <div class="fund-text">场地租金<br>及物业管理</div>
+        </div>
+        <div class="fund-item">
+          <div class="fund-dot"></div>
+          <div class="fund-num">02</div>
+          <div class="fund-text">空间装修改造<br>与景观打造</div>
+        </div>
+        <div class="fund-item">
+          <div class="fund-dot"></div>
+          <div class="fund-num">03</div>
+          <div class="fund-text">团队运营<br>与市场推广</div>
+        </div>
+        <div class="fund-item">
+          <div class="fund-dot"></div>
+          <div class="fund-num">04</div>
+          <div class="fund-text">直播及AI<br>数字化设备投入</div>
+        </div>
+        <div class="fund-item">
+          <div class="fund-dot"></div>
+          <div class="fund-num">05</div>
+          <div class="fund-text">项目流动资金<br>备用</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fund-quote">
+      <p>
+        "资金投向的核心逻辑是：<br>
+        <strong>先形成场景，再形成流量，最后形成经营结果。</strong>"
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S08 — 合作伙伴 ═══ -->
+<section id="s08">
+  <div class="w-label">08</div>
+  <div class="watermark">08</div>
+  <div class="container">
+    <div class="eyebrow">SECTION 08</div>
+    <h2>适合的合作伙伴</h2>
+    <div class="rule"></div>
+
+    <div class="partner-item">
+      <div class="partner-icon">🌏</div>
+      <div>
+        <h4>方向认同型企业家与投资人</h4>
+        <p>看好文旅康养、民族文化、东盟跨境、户外运动、夜经济方向的价值认同者</p>
+      </div>
+    </div>
+    <div class="partner-item">
+      <div class="partner-icon">🎩</div>
+      <div>
+        <h4>高质量圈层成员</h4>
+        <p>商协会、企业家协会、俱乐部等高质量圈层成员，寻找优质项目标的</p>
+      </div>
+    </div>
+    <div class="partner-item">
+      <div class="partner-icon">🏷️</div>
+      <div>
+        <h4>行业品牌方</h4>
+        <p>文创、酒类、康养、直播电商、进出口贸易等行业品牌方，寻求场景化营销出口</p>
+      </div>
+    </div>
+    <div class="partner-item">
+      <div class="partner-icon">🔗</div>
+      <div>
+        <h4>资源型长期伙伴</h4>
+        <p>拥有政企、招商、高端客户资源，并具备长期合作意愿的价值共建者</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S09 — 合作路径 ═══ -->
+<section id="s09">
+  <div class="w-label">09</div>
+  <div class="watermark">09</div>
+  <div class="container">
+    <div class="eyebrow">SECTION 09</div>
+    <h2>合作推进路径</h2>
+    <div class="rule"></div>
+
+    <div class="path-track">
+      <div class="path-step">
+        <div class="path-num">1</div>
+        <div class="path-content">
+          <h4>意向沟通</h4>
+          <p>初步了解需求，评估合作方向匹配度</p>
+        </div>
+      </div>
+      <div class="path-step">
+        <div class="path-num">2</div>
+        <div class="path-content">
+          <h4>项目介绍与价值说明</h4>
+          <p>全方位讲解项目定位、权益体系与商业模型</p>
+        </div>
+      </div>
+      <div class="path-step">
+        <div class="path-num">3</div>
+        <div class="path-content">
+          <h4>合作资质评估</h4>
+          <p>双向评估，确保资源与需求的精准匹配</p>
+        </div>
+      </div>
+      <div class="path-step">
+        <div class="path-num">4</div>
+        <div class="path-content">
+          <h4>协议确认</h4>
+          <p>明确各方权益、义务与退出机制</p>
+        </div>
+      </div>
+      <div class="path-step">
+        <div class="path-num">5</div>
+        <div class="path-content">
+          <h4>出资与备案</h4>
+          <p>资金到位，完成法律与合规手续</p>
+        </div>
+      </div>
+      <div class="path-step">
+        <div class="path-num">6</div>
+        <div class="path-content">
+          <h4>权益落地</h4>
+          <p>场景权益、经营权益分阶段兑现</p>
+        </div>
+      </div>
+      <div class="path-step">
+        <div class="path-num">7</div>
+        <div class="path-content">
+          <h4>长期运营与持续共建</h4>
+          <p>深度参与生态圈建设，共享长期增长红利</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S10 — 结语 ═══ -->
+<section class="closing" id="s10">
+  <div class="h-rule"></div>
+  <div class="eyebrow" style="margin-bottom:14px;">结语</div>
+  <div class="c-brand">晋文·云纪天舟</div>
+  <div class="c-rule"></div>
+  <div class="c-body">
+    <p style="margin-bottom:18px;">
+      "晋文·云纪天舟"所构建的，不只是<strong>一个空间</strong>或<strong>一个业态</strong>，<br>
+      而是一种<em>可持续的产业组合方式</em>。
+    </p>
+    <p style="margin-bottom:18px;">
+      它的价值，不在于单点爆发，而在于<em>长期积累</em>；<br>
+      它的优势，不在于概念包装，<br>
+      而在于<em>资源、场景、运营和结果的组合能力</em>。
+    </p>
+    <p>
+      我们希望寻找的，是看重<em>长期价值</em>、认同<em>专业运营</em>、<br>
+      愿意<em>共同做大做久</em>的合作伙伴。
+    </p>
+  </div>
+  <div class="c-end">JINWEN · YUNJI TIANZHOU</div>
+  <div class="h-rule" style="margin-top:52px; margin-bottom:0;"></div>
+</section>
+
+<script>
+  const sections = document.querySelectorAll('section[id]');
+  const nav = document.getElementById('navDots');
+
+  sections.forEach((s, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'nav-dot';
+    dot.setAttribute('aria-label', 'Section ' + i);
+    dot.onclick = () => s.scrollIntoView({ behavior: 'smooth' });
+    nav.appendChild(dot);
+  });
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const idx = [...sections].indexOf(e.target);
+        document.querySelectorAll('.nav-dot').forEach((d, i) =>
+          d.classList.toggle('active', i === idx)
+        );
+      }
+    });
+  }, { threshold: 0.35 });
+
+  sections.forEach(s => io.observe(s));
+
+  // Animate fund bar on scroll
+  const fundBar = document.getElementById('fundBar');
+  const fundObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        setTimeout(() => { fundBar.style.width = '100%'; }, 300);
+        fundObs.disconnect();
+      }
+    });
+  }, { threshold: 0.5 });
+
+  if (fundBar) {
+    const p = fundBar.closest('section') || document.getElementById('s07');
+    if (p) fundObs.observe(p);
+  }
+</script>
+
+</body>
+</html>

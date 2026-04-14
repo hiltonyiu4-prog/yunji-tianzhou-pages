@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晋文战略目标</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --red-deep: #6B1515;
+            --red-primary: #8B2323;
+            --red-bright: #A52A2A;
+            --gold-deep: #8B7355;
+            --gold-primary: #B8956B;
+            --gold-light: #D4BC94;
+            --gold-shine: #E8D5B5;
+            --bg-ivory: #FAF8F5;
+            --bg-cream: #F5F0E8;
+            --bg-warm: #F0EBE3;
+            --bg-gradient-start: #FBF9F7;
+            --bg-gradient-end: #F5F0E8;
+            --text-primary: #1A1714;
+            --text-secondary: #4A4540;
+            --text-muted: #7A756E;
+            --border-subtle: rgba(139, 115, 85, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Sans SC", "PingFang SC", -apple-system, sans-serif;
+            background: linear-gradient(160deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+            color: var(--text-primary);
+            line-height: 2;
+            font-size: 15px;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 80px;
+        }
+
+        /* 封面 */
+        .cover {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(160deg, #1C1815 0%, #2A231A 50%, #1A1512 100%);
+            text-align: center;
+            padding: 80px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse 80% 50% at 50% 0%, rgba(184, 149, 107, 0.12) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 80% 100%, rgba(139, 35, 35, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .cover-ornament {
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+            margin: 40px auto;
+            position: relative;
+        }
+
+        .cover-ornament::before {
+            content: '◆';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--gold-primary);
+            font-size: 0.45rem;
+            background: #1A1512;
+            padding: 0 10px;
+        }
+
+        .cover-title {
+            font-family: "Noto Serif SC", serif;
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: var(--bg-ivory);
+            letter-spacing: 0.2em;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 4px 40px rgba(0,0,0,0.3);
+        }
+
+        .cover-subtitle {
+            font-family: "Noto Serif SC", serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: var(--gold-light);
+            letter-spacing: 0.4em;
+            margin-bottom: 40px;
+        }
+
+        .cover-desc {
+            max-width: 500px;
+            color: rgba(248, 245, 240, 0.4);
+            font-size: 0.8rem;
+            line-height: 1.9;
+            position: relative;
+            z-index: 1;
+            letter-spacing: 0.1em;
+        }
+
+        /* 页面通用 */
+        .page {
+            min-height: 100vh;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .page-number {
+            position: absolute;
+            top: 48px;
+            right: 60px;
+            font-family: "Noto Serif SC", serif;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            letter-spacing: 0.15em;
+        }
+
+        /* 页面标题 */
+        .page-header {
+            margin-bottom: 56px;
+            text-align: center;
+        }
+
+        .page-number-label {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.25em;
+            color: var(--gold-primary);
+            margin-bottom: 14px;
+            text-transform: uppercase;
+        }
+
+        .page-title {
+            font-family: "Noto Serif SC", serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--red-deep);
+            letter-spacing: 0.08em;
+            position: relative;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .page-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+
+        .page-title::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold-deep), var(--gold-primary));
+            margin: 16px auto 0;
+        }
+
+        /* 核心框 */
+        .core-box {
+            background: linear-gradient(145deg, var(--bg-cream) 0%, var(--bg-warm) 100%);
+            border: 1px solid var(--border-subtle);
+            padding: 40px 48px;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .core-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--red-primary), var(--gold-primary));
+        }
+
+        .core-box-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            color: var(--gold-primary);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .core-box-content {
+            font-family: "Noto Serif SC", serif;
+            font-size: 1.15rem;
+            line-height: 2;
+            color: var(--text-primary);
+        }
+
+        .core-box-content .highlight {
+            color: var(--red-primary);
+            font-weight: 700;
+        }
+
+        .core-box-content .gold {
+            color: var(--gold-deep);
+            font-weight: 600;
+        }
+
+        /* 引用 */
+        blockquote {
+            background: linear-gradient(145deg, var(--bg-cream) 0%, var(--bg-warm) 100%);
+            border: none;
+            padding: 36px 44px;
+            margin: 36px 0;
+            position: relative;
+            font-family: "Noto Serif SC", serif;
+            font-size: 1.05rem;
+            line-height: 2.1;
+            color: var(--text-secondary);
+            font-style: normal;
+        }
+
+        blockquote::before {
+            content: '"';
+            position: absolute;
+            top: 16px;
+            left: 24px;
+            font-size: 3.5rem;
+            color: var(--gold-light);
+            font-family: Georgia, serif;
+            line-height: 1;
+            opacity: 0.4;
+        }
+
+        blockquote p {
+            position: relative;
+            z-index: 1;
+        }
+
+        blockquote p + p {
+            margin-top: 12px;
+        }
+
+        /* 列表 */
+        ul, ol {
+            padding-left: 0;
+            margin: 20px 0;
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 14px;
+            line-height: 1.85;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 5px;
+            height: 5px;
+            background: var(--gold-primary);
+            transform: rotate(45deg);
+        }
+
+        /* 数字列表 */
+        .numbered li {
+            padding-left: 48px;
+            margin-bottom: 28px;
+        }
+
+        .numbered li::before {
+            content: counter(item, decimal-leading-zero);
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, var(--red-primary), var(--red-deep));
+            border-radius: 50%;
+            transform: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            font-family: "Noto Sans SC", sans-serif;
+            counter-increment: none;
+        }
+
+        .numbered {
+            counter-reset: item;
+        }
+
+        .numbered li {
+            counter-increment: item;
+        }
+
+        /* 分隔线 */
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin: 52px 0;
+        }
+
+        .divider-line {
+            flex: 1;
+            max-width: 160px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+        }
+
+        .divider-diamond {
+            color: var(--gold-primary);
+            font-size: 0.45rem;
+            opacity: 0.6;
+        }
+
+        /* 卡片网格 */
+        .card-grid {
+            display: grid;
+            gap: 20px;
+            margin: 36px 0;
+        }
+
+        .card-grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .card-grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .card-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+        .card {
+            background: var(--bg-ivory);
+            border: 1px solid var(--border-subtle);
+            padding: 28px 24px;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(26, 23, 20, 0.08);
+            border-color: var(--gold-light);
+        }
+
+        .card-number {
+            font-family: "Noto Serif SC", serif;
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: var(--gold-light);
+            line-height: 1;
+            margin-bottom: 14px;
+            opacity: 0.5;
+        }
+
+        .card-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
+        .card-desc {
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            line-height: 1.7;
+        }
+
+        /* 标签 */
+        .tag {
+            display: inline-block;
+            background: var(--red-primary);
+            color: white;
+            padding: 3px 10px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            margin-right: 5px;
+            margin-bottom: 4px;
+        }
+
+        .tag-gold {
+            background: var(--gold-primary);
+            color: white;
+        }
+
+        /* 客户卡片 */
+        .customer-card {
+            background: linear-gradient(145deg, var(--bg-cream) 0%, var(--bg-warm) 100%);
+            border: 1px solid var(--border-subtle);
+            padding: 32px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .customer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--red-primary), var(--gold-primary));
+        }
+
+        .customer-label {
+            display: inline-block;
+            background: var(--gold-primary);
+            color: white;
+            padding: 2px 12px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+        }
+
+        .customer-title {
+            font-family: "Noto Serif SC", serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--red-deep);
+            margin-bottom: 6px;
+        }
+
+        .customer-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        /* 角色卡片 */
+        .role-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            padding: 28px;
+            background: var(--bg-ivory);
+            border: 1px solid var(--border-subtle);
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .role-card:hover {
+            border-color: var(--gold-light);
+        }
+
+        .role-number {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--red-primary) 0%, var(--red-deep) 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Noto Serif SC", serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 50%;
+        }
+
+        .role-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            font-size: 1rem;
+        }
+
+        .role-desc {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.7;
+        }
+
+        /* 阶段卡片 */
+        .phase-card {
+            background: var(--bg-ivory);
+            border: 1px solid var(--border-subtle);
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        .phase-header {
+            background: linear-gradient(135deg, var(--red-primary), var(--red-deep));
+            color: white;
+            padding: 20px 32px;
+        }
+
+        .phase-title {
+            font-family: "Noto Serif SC", serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .phase-subtitle {
+            font-size: 0.75rem;
+            opacity: 0.75;
+            font-weight: 400;
+        }
+
+        .phase-body {
+            padding: 28px 32px;
+        }
+
+        .phase-body .tag {
+            margin-top: 14px;
+        }
+
+        /* 周期路径 */
+        .cycle-path {
+            display: flex;
+            gap: 0;
+            margin: 48px 0;
+        }
+
+        .cycle-item {
+            flex: 1;
+            position: relative;
+            padding: 28px 20px;
+            background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-warm) 100%);
+            text-align: center;
+        }
+
+        .cycle-item:first-child { border-radius: 8px 0 0 8px; }
+        .cycle-item:last-child { border-radius: 0 8px 8px 0; }
+
+        .cycle-item:not(:last-child)::after {
+            content: '→';
+            position: absolute;
+            right: -18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gold-primary);
+            font-size: 1.1rem;
+            z-index: 2;
+            background: linear-gradient(160deg, var(--bg-gradient-start), var(--bg-gradient-end));
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cycle-label {
+            display: inline-block;
+            background: var(--red-primary);
+            color: white;
+            padding: 3px 12px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+        }
+
+        .cycle-title {
+            font-family: "Noto Serif SC", serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .cycle-content {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+        }
+
+        /* 时间线 */
+        .timeline {
+            position: relative;
+            padding-left: 36px;
+            margin: 32px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 8px;
+            bottom: 8px;
+            width: 1px;
+            background: linear-gradient(180deg, var(--red-primary), var(--gold-primary), var(--gold-light));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 28px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -36px;
+            top: 7px;
+            width: 9px;
+            height: 9px;
+            background: var(--gold-primary);
+            border-radius: 50%;
+            border: 2px solid var(--bg-gradient-start);
+            box-shadow: 0 0 0 2px var(--gold-light);
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .timeline-content {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        /* 表格 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 28px 0;
+        }
+
+        th {
+            background: var(--red-deep);
+            color: white;
+            padding: 16px 22px;
+            text-align: left;
+            font-weight: 500;
+            font-size: 0.82rem;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            padding: 16px 22px;
+            border-bottom: 1px solid var(--border-subtle);
+            font-size: 0.88rem;
+        }
+
+        tr:hover td {
+            background: var(--bg-cream);
+        }
+
+        /* 大字强调 */
+        .big-quote {
+            background: linear-gradient(135deg, var(--red-deep) 0%, var(--red-primary) 100%);
+            color: white;
+            padding: 52px;
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .big-quote::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(184, 149, 107, 0.12), transparent 60%);
+        }
+
+        .big-quote p {
+            font-family: "Noto Serif SC", serif;
+            font-size: 1.5rem;
+            line-height: 2;
+            position: relative;
+            z-index: 1;
+        }
+
+        .big-quote .gold {
+            color: var(--gold-light);
+            font-weight: 600;
+        }
+
+        /* 总结网格 */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 40px 0;
+        }
+
+        .summary-item {
+            text-align: center;
+            padding: 32px 20px;
+            background: var(--bg-ivory);
+            border: 1px solid var(--border-subtle);
+            position: relative;
+        }
+
+        .summary-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 36px;
+            height: 2px;
+            background: var(--gold-primary);
+        }
+
+        .summary-number {
+            font-family: "Noto Serif SC", serif;
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            letter-spacing: 0.15em;
+            margin-bottom: 10px;
+        }
+
+        .summary-title {
+            font-family: "Noto Serif SC", serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--red-deep);
+        }
+
+        /* 页脚 */
+        .page-footer {
+            background: linear-gradient(160deg, #1C1815 0%, #2A231A 100%);
+            color: white;
+            padding: 72px 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .page-footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+        }
+
+        .footer-quote {
+            font-family: "Noto Serif SC", serif;
+            font-size: 1.4rem;
+            color: var(--gold-light);
+            margin-bottom: 28px;
+            font-weight: 400;
+            letter-spacing: 0.08em;
+        }
+
+        .footer-line {
+            width: 50px;
+            height: 1px;
+            background: linear-gradient(90deg, var(--gold-deep), var(--gold-primary), var(--gold-deep));
+            margin: 0 auto 20px auto;
+        }
+
+        .footer-note {
+            font-size: 0.75rem;
+            color: rgba(248, 245, 240, 0.35);
+            letter-spacing: 0.15em;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .container { padding: 0 40px; }
+            .card-grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .card-grid-3 { grid-template-columns: repeat(2, 1fr); }
+            .cover-title { font-size: 3rem; }
+            .cycle-path { flex-direction: column; }
+            .cycle-item:not(:last-child)::after {
+                content: '↓';
+                right: 50%;
+                top: auto;
+                bottom: -16px;
+                transform: translateX(50%);
+            }
+            .summary-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 0 24px; }
+            .card-grid-2,
+            .card-grid-3,
+            .card-grid-4 { grid-template-columns: 1fr; }
+            .cover-title { font-size: 2.4rem; }
+            .cover-subtitle { letter-spacing: 0.2em; }
+            .page-title { font-size: 1.7rem; }
+            .summary-grid { grid-template-columns: 1fr; }
+        }
+
+        @media print {
+            .page { page-break-after: always; min-height: auto; padding: 60px 0; }
+            .cover { min-height: 100vh; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 封面 -->
+<section class="cover">
+    <div class="cover-ornament"></div>
+    <h1 class="cover-title">晋文</h1>
+    <p class="cover-subtitle">战略目标</p>
+    <div class="cover-ornament"></div>
+    <p class="cover-desc">甲方汇报 · 内部战略沟通 · 招商提案总纲 · 统一对外口径</p>
+</section>
+
+<!-- 第2页：合作关系说明 -->
+<section class="page">
+    <span class="page-number">贰</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">合作关系</div>
+            <h2 class="page-title">合作关系说明</h2>
+            <p class="page-subtitle">晋文是甲方，我方是企业服务支持方</p>
+        </div>
+
+        <div class="core-box">
+            <div class="core-box-label">核心定义</div>
+            <div class="core-box-content">
+                <p>本PPT中所有内容，均围绕晋文的战略目标、业务发展与项目落地展开。晋文是本次合作的甲方及项目决策主体，我方是为晋文提供企业服务的一方。</p>
+            </div>
+        </div>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">这一定位意味着</h3>
+
+        <ul>
+            <li>不是站在第三方视角讲故事，而是站在甲方视角<span class="highlight">明确问题、路径和结果</span></li>
+            <li>不是做泛泛而谈的概念材料，而是做<span class="highlight">可执行、可落地、可判断</span>的合作说明</li>
+            <li>不是讨论"我们要做什么"，而是讨论"围绕晋文，我们如何提供服务并推动结果"</li>
+        </ul>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span class="divider-diamond">◆</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">统一后的表达原则</h3>
+
+        <div class="card-grid card-grid-4" style="grid-template-columns: repeat(2, 1fr);">
+            <div class="card">
+                <div class="card-number">01</div>
+                <div class="card-title">以晋文需求为中心</div>
+            </div>
+            <div class="card">
+                <div class="card-number">02</div>
+                <div class="card-title">以服务结果为导向</div>
+            </div>
+            <div class="card">
+                <div class="card-number">03</div>
+                <div class="card-title">以甲方视角组织材料</div>
+            </div>
+            <div class="card">
+                <div class="card-number">04</div>
+                <div class="card-title">以项目推进与平台长成为终局</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第3页：总判断 -->
+<section class="page">
+    <span class="page-number">叁</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">核心判断</div>
+            <h2 class="page-title">总判断</h2>
+            <p class="page-subtitle">晋文不是单一公司类型，而是项目型企业家服务组织</p>
+        </div>
+
+        <blockquote>
+            <p>晋文不是单一的招商公司、物业运营公司、培训机构、咨询公司或技术平台，而是一个以云南本地项目场景为入口、以企业家与商协会资源为核心资产、以文化赋能和资源撮合为方法、以项目落地和价值转化为结果的<span class="highlight">区域型企业家服务组织</span>。</p>
+        </blockquote>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">这一判断意味着</h3>
+
+        <ul>
+            <li>晋文<span class="highlight">不是只卖产品</span>，不是只做执行，不是只做平台包装</li>
+            <li>晋文的核心能力在于<span class="highlight">把项目、资源、客户和规则串起来</span></li>
+            <li>晋文的长期方向<span class="highlight">不是做更多杂项业务</span>，而是形成一个可持续的企业家服务与生态组织能力</li>
+        </ul>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span class="divider-diamond">◆</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">对外表达可浓缩为</h3>
+
+        <div class="big-quote">
+            <p>晋文是云南本地项目场景下的<br><span class="gold">企业家 / 商协会服务公司</span></p>
+        </div>
+    </div>
+</section>
+
+<!-- 第4页：差异化价值 -->
+<section class="page">
+    <span class="page-number">肆</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">差异化</div>
+            <h2 class="page-title">差异化价值</h2>
+            <p class="page-subtitle">晋文最独一的，不是单点业务，而是组合能力</p>
+        </div>
+
+        <blockquote>
+            <p>晋文的差异化，不在于它是不是做平台，也不在于它是不是有很多业务模块，而在于它具备一种很少见的组合能力：</p>
+            <p>以云南为主场，以项目为入口，以企业家资源为底盘，以文化和战略为表达，以资源组织和招商转化为方法，逐步长出企业家平台与区域生态组织。</p>
+        </blockquote>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">晋文的差异化，具体体现在三件事</h3>
+
+        <div class="card-grid card-grid-3">
+            <div class="card">
+                <div class="card-title">区域性强</div>
+                <div class="card-desc">云南不是市场，云南是主场。晋文不是外来平台，而是扎根云南本地产业肌理、合作规则和资源结构的主场型组织。</div>
+            </div>
+            <div class="card">
+                <div class="card-title">深耕性强</div>
+                <div class="card-desc">创始人几十年深耕云南，形成了对地方规则、产业变化、项目推进节奏、真实需求和信任边界的深层理解。</div>
+            </div>
+            <div class="card">
+                <div class="card-title">链接力强</div>
+                <div class="card-desc">晋文拥有<span style="background: var(--gold-shine); color: var(--text-primary); padding: 1px 6px; border-radius: 2px;">上万全球企业家资源</span>，能够把云南项目放到更大的企业家网络里去组织和放大。</div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">为什么这很重要</h3>
+
+        <ul>
+            <li>不是所有公司都能做云南主场</li>
+            <li>不是所有公司都有几十年的深耕底盘</li>
+            <li>不是所有公司都能把全球企业家资源导入本地项目</li>
+            <li>更不是所有公司都能把项目、资源、客户和平台串成一个系统</li>
+        </ul>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">差异化的落点</h3>
+
+        <table>
+            <tr>
+                <th style="width: 90px;">对象</th>
+                <th>意味着什么</th>
+            </tr>
+            <tr>
+                <td><span class="tag">甲方</span></td>
+                <td>晋文不是普通招商公司，而是<span class="highlight">项目型企业家服务组织</span></td>
+            </tr>
+            <tr>
+                <td><span class="tag">客户</span></td>
+                <td>晋文不是简单卖席位，而是能带来<span class="highlight">真实资源、订单和长期合作</span></td>
+            </tr>
+            <tr>
+                <td><span class="tag">平台</span></td>
+                <td>晋文未来不是只做项目，而是能<span class="highlight">长出企业家平台和区域型生态组织</span></td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- 第5页：一句话定位 -->
+<section class="page">
+    <span class="page-number">伍</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">定位</div>
+            <h2 class="page-title">一句话定位</h2>
+            <p class="page-subtitle">这句话要解决什么问题：对外介绍时，别人第一时间能听懂晋文在做什么</p>
+        </div>
+
+        <div class="big-quote">
+            <p>晋文是云南本地项目场景下的<br><span class="gold">企业家 / 商协会服务公司</span></p>
+        </div>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">这句话背后的完整含义</h3>
+
+        <ul>
+            <li>晋文围绕云南本地项目展开，<span class="highlight">不是脱离场景空谈平台</span></li>
+            <li>晋文服务的对象不是泛大众，而是<span class="highlight">企业家、商协会、政企和品牌合作方</span></li>
+            <li>晋文做的事情包括定位、招商、资源组织、订单导入、平台承接</li>
+            <li>晋文最终不是停留在项目层面，而是<span class="highlight">长出企业家平台</span></li>
+        </ul>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span class="divider-diamond">◆</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <div class="core-box" style="text-align: center;">
+            <div class="core-box-label" style="text-align: center;">重要性</div>
+            <div class="core-box-content" style="text-align: center; font-size: 1.2rem;">
+                它是晋文后续所有<span class="highlight">招商、汇报、合作、品牌表达</span>的总入口。
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第6页：晋文到底做什么 -->
+<section class="page">
+    <span class="page-number">陆</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">业务</div>
+            <h2 class="page-title">晋文到底做什么</h2>
+            <p class="page-subtitle">晋文主要做六件事</p>
+        </div>
+
+        <ol class="numbered">
+            <li>
+                <div class="card-title">帮云南本地项目找方向</div>
+                <div class="card-desc">包括项目定位、业态组合、招商逻辑、客户判断、对外表达统一。不是简单"接项目"，而是先把项目的方向、逻辑和价值讲清楚。</div>
+            </li>
+            <li>
+                <div class="card-title">帮项目把资源找来、把客户招进来</div>
+                <div class="card-desc">包括企业家资源、商协会资源、政企资源、品牌资源、渠道资源和合作资源。晋文做的不是空泛连接，而是把<span class="highlight">真实资源带进真实项目</span>。</div>
+            </li>
+            <li>
+                <div class="card-title">帮项目把招商做成交</div>
+                <div class="card-desc">包括招商方案、联合创始人招募、入驻洽谈、权益设计、签约推进和落地执行。招商不是口号，而是晋文<span class="highlight">第一阶段最现实的现金流入口</span>。</div>
+            </li>
+            <li>
+                <div class="card-title">帮项目把文化讲清楚、把品牌做出来</div>
+                <div class="card-desc">包括文化定调、品牌表达、场景审美、内容包装和项目气质塑造。晋文不是只做业务，也承担"把项目讲得像样、讲得有气质"的任务。</div>
+            </li>
+            <li>
+                <div class="card-title">帮项目把订单和渠道接进来</div>
+                <div class="card-desc">包括采购导入、圈层转介绍、内部订单、直播电商、选品、会务和活动资源导流。晋文不只是招商，还要让项目有<span class="highlight">持续的业务流和订单流</span>。</div>
+            </li>
+            <li>
+                <div class="card-title">帮项目沉淀成长期平台</div>
+                <div class="card-desc">也就是把一个个项目，逐步做成企业家平台、资源平台和区域生态平台。<span class="gold">平台不是一开始就有，而是从项目中长出来的</span>。</div>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- 第7页：业务边界 -->
+<section class="page">
+    <span class="page-number">柒</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">边界</div>
+            <h2 class="page-title">晋文的业务边界</h2>
+            <p class="page-subtitle">晋文做什么，不做什么</p>
+        </div>
+
+        <div class="card-grid card-grid-2" style="gap: 24px;">
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-title">✓ 晋文明确要做什么</div>
+                </div>
+                <div class="phase-body">
+                    <ol style="margin: 0; padding-left: 18px;">
+                        <li style="padding-left: 10px; margin-bottom: 12px;">项目战略定位</li>
+                        <li style="padding-left: 10px; margin-bottom: 12px;">文化赋能与品牌表达</li>
+                        <li style="padding-left: 10px; margin-bottom: 12px;">资源组织与撮合</li>
+                        <li style="padding-left: 10px; margin-bottom: 12px;">招商转化</li>
+                        <li style="padding-left: 10px; margin-bottom: 12px;">订单渠道与精准赋能</li>
+                        <li style="padding-left: 10px; margin-bottom: 0;">企业家平台承接</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="phase-card">
+                <div class="phase-header" style="background: linear-gradient(135deg, #555048, #3A3530);">
+                    <div class="phase-title">✗ 晋文明确不做什么</div>
+                </div>
+                <div class="phase-body">
+                    <ol style="margin: 0; padding-left: 18px;">
+                        <li style="padding-left: 10px; margin-bottom: 12px;"><strong>不做泛化型招商代理</strong><br><span style="font-size: 0.8rem; color: var(--text-muted);">不简单替别人卖场地、卖会员、卖席位</span></li>
+                        <li style="padding-left: 10px; margin-bottom: 12px;"><strong>不做重执行外包公司</strong><br><span style="font-size: 0.8rem; color: var(--text-muted);">不把自己做成全链条施工总包、物业代管</span></li>
+                        <li style="padding-left: 10px; margin-bottom: 12px;"><strong>不做纯培训机构</strong><br><span style="font-size: 0.8rem; color: var(--text-muted);">可以做活动、沙龙、访谈，但不以课程售卖为核心</span></li>
+                        <li style="padding-left: 10px; margin-bottom: 12px;"><strong>不做空转平台</strong><br><span style="font-size: 0.8rem; color: var(--text-muted);">可以有线上平台和AI工具，但不能过早重技术化包装</span></li>
+                        <li style="padding-left: 10px; margin-bottom: 12px;"><strong>不做失控的关系撮合</strong><br><span style="font-size: 0.8rem; color: var(--text-muted);">资源链接必须有规则、边界、记录、责任和复盘</span></li>
+                        <li style="padding-left: 10px; margin-bottom: 0;"><strong>不做单纯资本叙事</strong><br><span style="font-size: 0.8rem; color: var(--text-muted);">可以有股权和联合创始人设计，但当前主线仍是项目落地</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="core-box" style="margin-top: 40px; text-align: center;">
+            <div class="core-box-label" style="text-align: center;">边界意义</div>
+            <div class="core-box-content" style="text-align: center;">
+                边界不是为了限制，而是为了确保晋文<span class="highlight">不发散、不断线、不空转</span>。
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第8页：目标客户分层 -->
+<section class="page">
+    <span class="page-number">捌</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">客户</div>
+            <h2 class="page-title">目标客户分层</h2>
+            <p class="page-subtitle">晋文的客户不能按"谁有钱"来分，而要按合作价值来分</p>
+        </div>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">分层原则</h3>
+
+        <div class="card-grid card-grid-3" style="margin-bottom: 40px;">
+            <div class="card" style="text-align: center; padding: 20px;">
+                <div class="card-title">资源属性</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 20px;">
+                <div class="card-title">合作深度</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 20px;">
+                <div class="card-title">决策能力</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 20px;">
+                <div class="card-title">落地能力</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 20px;">
+                <div class="card-title">复购可能性</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 20px;">
+                <div class="card-title">平台沉淀价值</div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">五类核心客户</h3>
+
+        <div class="card-grid card-grid-3">
+            <div class="card">
+                <div class="card-number">01</div>
+                <div class="card-title">项目型客户</div>
+            </div>
+            <div class="card">
+                <div class="card-number">02</div>
+                <div class="card-title">资源型客户</div>
+            </div>
+            <div class="card">
+                <div class="card-number">03</div>
+                <div class="card-title">决策型客户</div>
+            </div>
+            <div class="card">
+                <div class="card-number">04</div>
+                <div class="card-title">高净值长期合作客户</div>
+            </div>
+            <div class="card">
+                <div class="card-number">05</div>
+                <div class="card-title">区域生态合作伙伴</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第9页：五类客户详情 -->
+<section class="page">
+    <span class="page-number">玖</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">客户详情</div>
+            <h2 class="page-title">五类核心客户</h2>
+        </div>
+
+        <!-- 项目型客户 -->
+        <div class="customer-card">
+            <div class="customer-label">01 · 项目型客户</div>
+            <div class="customer-title">解决招商和现金流的第一批客户</div>
+            <div class="customer-desc">这类客户围绕具体项目场景产生真实需求。他们关心的不是概念，而是<span class="highlight">空间、经营、招商、现金流、入驻和实际合作</span>。</div>
+        </div>
+
+        <ul style="margin-bottom: 36px;">
+            <li>需要办公、展示、会客、会务、康养、活动空间的商户</li>
+            <li>对民族博物馆、观音山、金都商集等项目有入驻意愿的经营者</li>
+            <li>房车露营、匹克球、潮玩市集、餐饮、文创、直播电商等业态方</li>
+        </ul>
+
+        <div class="card-grid card-grid-2" style="gap: 14px; margin-bottom: 36px;">
+            <div class="card" style="padding: 18px 22px;">
+                <div class="card-title" style="color: var(--gold-primary); font-size: 0.75rem; margin-bottom: 6px;">重要性</div>
+                <div class="card-desc">他们直接对应晋文第一阶段最紧急的任务：<span class="highlight">招商和现金流</span></div>
+            </div>
+            <div class="card" style="padding: 18px 22px;">
+                <div class="card-title" style="color: var(--gold-primary); font-size: 0.75rem; margin-bottom: 6px;">晋文需提供</div>
+                <div class="card-desc">明确的场地边界、清晰的费用结构、明确的经营保护</div>
+            </div>
+        </div>
+
+        <!-- 资源型客户 -->
+        <div class="customer-card">
+            <div class="customer-label">02 · 资源型客户</div>
+            <div class="customer-title">能给项目带来资源增量的客户</div>
+            <div class="customer-desc">这类客户不一定第一时间出资，但能给项目带来<span class="highlight">渠道、品牌、客户、媒体、政府关系、产业资源或跨境资源</span>。</div>
+        </div>
+
+        <ul style="margin-bottom: 36px;">
+            <li>商协会核心成员、企业家协会负责人</li>
+            <li>品牌方创始人、供应链资源方</li>
+            <li>跨境贸易资源方、文旅康养等行业资源方</li>
+        </ul>
+
+        <div class="card-grid card-grid-2" style="gap: 14px; margin-bottom: 36px;">
+            <div class="card" style="padding: 18px 22px;">
+                <div class="card-title" style="color: var(--gold-primary); font-size: 0.75rem; margin-bottom: 6px;">重要性</div>
+                <div class="card-desc">他们决定晋文能不能从"项目招商"进入"<span class="highlight">资源组织</span>"</div>
+            </div>
+            <div class="card" style="padding: 18px 22px;">
+                <div class="card-title" style="color: var(--gold-primary); font-size: 0.75rem; margin-bottom: 6px;">晋文需提供</div>
+                <div class="card-desc">资源对接机制、项目合作入口、联营和合作分成机制</div>
+            </div>
+        </div>
+
+        <!-- 决策型客户 -->
+        <div class="customer-card">
+            <div class="customer-label">03 · 决策型客户</div>
+            <div class="customer-title">具备签约权、采购权、审批权、拍板权的人</div>
+            <div class="customer-desc">这类客户不是普通参与者，而是能决定项目合作<span class="highlight">是否成立、是否签约、是否落地</span>的人。</div>
+        </div>
+
+        <ul style="margin-bottom: 36px;">
+            <li>企业主、董事长、总经理</li>
+            <li>商协会会长、秘书长、核心理事</li>
+            <li>品牌负责人、区域负责人、产业项目负责人</li>
+        </ul>
+
+        <div class="card-grid card-grid-2" style="gap: 14px; margin-bottom: 36px;">
+            <div class="card" style="padding: 18px 22px;">
+                <div class="card-title" style="color: var(--gold-primary); font-size: 0.75rem; margin-bottom: 6px;">重要性</div>
+                <div class="card-desc">有了决策层，才有<span class="highlight">签约、采购、联营、置换和复购</span></div>
+            </div>
+            <div class="card" style="padding: 18px 22px;">
+                <div class="card-title" style="color: var(--gold-primary); font-size: 0.75rem; margin-bottom: 6px;">晋文需提供</div>
+                <div class="card-desc">清晰的合作框架、回报结构、风险边界、退出安排</div>
+            </div>
+        </div>
+
+        <!-- 高净值长期合作客户 -->
+        <div class="customer-card">
+            <div class="customer-label">04 · 高净值长期合作客户</div>
+            <div class="customer-title">愿意长期、高投入、深合作进入体系的人</div>
+            <div class="customer-desc">这类客户不是短期进场，而是愿意<span class="highlight">长期、高投入、深合作</span>地进入晋文体系。他们看重平台价值、圈层价值和长期复利，而不是单次交易。</div>
+        </div>
+
+        <ul style="margin-bottom: 36px;">
+            <li>高净值企业家、跨区域资源整合者</li>
+            <li>联合创始人候选人、战略合作对象</li>
+            <li>资源入股或长期共建伙伴</li>
+        </ul>
+
+        <div class="card-grid card-grid-2" style="gap: 14px; margin-bottom: 36px;">
+            <div class="card" style="padding: 18px 22px;">
+                <div class="card-title" style="color: var(--gold-primary); font-size: 0.75rem; margin-bottom: 6px;">重要性</div>
+                <div class="card-desc">他们决定晋文能不能从"项目合作"进化成"<span class="highlight">生态合作</span>"</div>
+            </div>
+            <div class="card" style="padding: 18px 22px;">
+                <div class="card-title" style="color: var(--gold-primary); font-size: 0.75rem; margin-bottom: 6px;">晋文需提供</div>
+                <div class="card-desc">联合创始人席位、战略合作机制、资源入股与联营机制</div>
+            </div>
+        </div>
+
+        <!-- 区域生态合作伙伴 -->
+        <div class="customer-card">
+            <div class="customer-label">05 · 区域生态合作伙伴</div>
+            <div class="customer-title">能与晋文形成长期共建的合作方</div>
+            <div class="customer-desc">这类客户不是单一买方，而是<span class="highlight">长期共建者</span>。它们和晋文之间不是一次性买卖关系，而是<span class="gold">互为入口、互为资源、互为场景、互为平台</span>的长期合作关系。</div>
+        </div>
+
+        <ul style="margin-bottom: 36px;">
+            <li>政企资源方、产业园区或平台招商方</li>
+            <li>具备跨境通道的合作方</li>
+            <li>具备供应链、品牌、客户池的合作机构</li>
+            <li>区域影响力强的企业家组织、协会和圈层平台</li>
+        </ul>
+
+        <div class="card-grid card-grid-2" style="gap: 14px;">
+            <div class="card" style="padding: 18px 22px;">
+                <div class="card-title" style="color: var(--gold-primary); font-size: 0.75rem; margin-bottom: 6px;">重要性</div>
+                <div class="card-desc">他们决定晋文未来是不是<span class="highlight">区域型生态组织</span></div>
+            </div>
+            <div class="card" style="padding: 18px 22px;">
+                <div class="card-title" style="color: var(--gold-primary); font-size: 0.75rem; margin-bottom: 6px;">晋文需提供</div>
+                <div class="card-desc">共建接口、品牌和资源互换接口、联营分成机制</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第10页：长期发展方向 -->
+<section class="page">
+    <span class="page-number">拾</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">长期</div>
+            <h2 class="page-title">晋文的长期发展方向</h2>
+            <p class="page-subtitle">从项目入口，长出企业家平台与区域生态组织</p>
+        </div>
+
+        <div class="card-grid card-grid-4" style="margin-bottom: 40px;">
+            <div class="card" style="text-align: center; border-top: 2px solid var(--red-primary);">
+                <div class="card-number" style="color: var(--red-primary);">01</div>
+                <div class="card-title">项目</div>
+                <div class="card-desc" style="font-size: 0.78rem;">是入口</div>
+            </div>
+            <div class="card" style="text-align: center; border-top: 2px solid var(--gold-primary);">
+                <div class="card-number" style="color: var(--gold-primary);">02</div>
+                <div class="card-title">客户</div>
+                <div class="card-desc" style="font-size: 0.78rem;">是资产</div>
+            </div>
+            <div class="card" style="text-align: center; border-top: 2px solid var(--gold-primary);">
+                <div class="card-number" style="color: var(--gold-primary);">03</div>
+                <div class="card-title">资源</div>
+                <div class="card-desc" style="font-size: 0.78rem;">是底盘</div>
+            </div>
+            <div class="card" style="text-align: center; border-top: 2px solid var(--red-primary);">
+                <div class="card-number" style="color: var(--red-primary);">04</div>
+                <div class="card-title">平台</div>
+                <div class="card-desc" style="font-size: 0.78rem;">是结果</div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 28px 0;">
+            <div style="display: inline-flex; align-items: center; gap: 8px; color: var(--gold-primary); font-size: 1.1rem;">
+                <span>↓</span><span>↓</span><span>↓</span><span>↓</span><span>↓</span>
+            </div>
+        </div>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">这意味着</h3>
+
+        <ul>
+            <li>晋文<span class="highlight">不是只做几个项目</span>，而是要把这些项目转化为企业家平台的底层资产</li>
+            <li>晋文<span class="highlight">不是只做资源撮合</span>，而是要把资源转化为机制</li>
+            <li>晋文<span class="highlight">不是只做客户成交</span>，而是要把客户沉淀成平台成员</li>
+        </ul>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; margin-top: 40px; text-transform: uppercase;">长期方向的意义</h3>
+
+        <ul>
+            <li>让晋文从<span class="highlight">项目型公司走向平台型组织</span></li>
+            <li>让云南项目从<span class="highlight">单点合作走向区域联动</span></li>
+            <li>让企业家、商协会、政企、品牌、渠道形成<span class="highlight">长期网络</span></li>
+        </ul>
+    </div>
+</section>
+
+<!-- 第11页：核心角色 -->
+<section class="page">
+    <span class="page-number">拾壹</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">角色</div>
+            <h2 class="page-title">晋文的核心角色</h2>
+            <p class="page-subtitle">五个核心角色</p>
+        </div>
+
+        <div class="role-card">
+            <div class="role-number">1</div>
+            <div>
+                <div class="role-title">项目落地承接方</div>
+                <div class="role-desc">优先把云南本地项目做成样板，解决招商、入驻、经营、合作和现金流问题。</div>
+            </div>
+        </div>
+
+        <div class="role-card">
+            <div class="role-number">2</div>
+            <div>
+                <div class="role-title">企业家资源组织者</div>
+                <div class="role-desc">把分散的企业家、品牌方、投资人、商协会成员和合作伙伴组织成一个长期互动的资源网络。</div>
+            </div>
+        </div>
+
+        <div class="role-card">
+            <div class="role-number">3</div>
+            <div>
+                <div class="role-title">政企与商协会连接器</div>
+                <div class="role-desc">把云南本地政企资源、商协会资源、企业家圈层资源和项目场景资源串起来，转化为公司能力。</div>
+            </div>
+        </div>
+
+        <div class="role-card">
+            <div class="role-number">4</div>
+            <div>
+                <div class="role-title">战略定位与文化赋能者</div>
+                <div class="role-desc">承担项目战略定位、文化定调、品牌表达、内容叙事和场景气质塑造的作用。</div>
+            </div>
+        </div>
+
+        <div class="role-card">
+            <div class="role-number">5</div>
+            <div>
+                <div class="role-title">区域生态平台雏形</div>
+                <div class="role-desc">从项目公司逐步长出企业家平台和区域型生态组织。</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第12页：最独一的特征 -->
+<section class="page">
+    <span class="page-number">拾贰</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">特征</div>
+            <h2 class="page-title">最独一的特征</h2>
+            <p class="page-subtitle">区域性 + 深耕性 + 全球资源</p>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header">
+                <div class="phase-title">1. 区域性：云南不是市场，云南是主场</div>
+            </div>
+            <div class="phase-body">
+                <p>晋文不是外部平台来做云南项目，而是以云南本地的产业肌理、资源结构、合作习惯和人情网络为基础，真正把云南当作自己的主场来经营。</p>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header" style="background: linear-gradient(135deg, var(--gold-deep), var(--gold-primary));">
+                <div class="phase-title">2. 深耕性：创始人几十年深耕云南</div>
+            </div>
+            <div class="phase-body">
+                <p>这不是一段履历，而是<span class="highlight">能力底盘</span>。它带来的不是单次资源，而是长期建立的信任网络、地方规则熟悉度、产业判断力、项目推进节奏感和对真实需求的理解。</p>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header">
+                <div class="phase-title">3. 全球资源：云南主场之上，叠加全球企业家网络</div>
+            </div>
+            <div class="phase-body">
+                <p>晋文拥有<span style="background: var(--gold-shine); color: var(--text-primary); padding: 2px 8px; border-radius: 2px;">上万全球企业家资源</span>，可以把云南项目放到更大的企业家网络里组织和放大，让云南成为资源汇聚点，而不是资源外流点。</p>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header" style="background: linear-gradient(135deg, var(--red-deep), #4A1515);">
+                <div class="phase-title">4. 独一组合：本地深耕力 + 全球链接力同时存在</div>
+            </div>
+            <div class="phase-body">
+                <p>这三者叠加后，晋文不是单纯的云南公司，也不是单纯的全国平台，而是一个以云南为主场、以深耕为底盘、以全球企业家资源为放大器的<span class="highlight">项目型生态组织</span>。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第13页：长期发展规划 -->
+<section class="page">
+    <span class="page-number">拾叁</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">规划</div>
+            <h2 class="page-title">长期发展规划（3-5年）</h2>
+            <p class="page-subtitle">三年跑通模型，五年形成平台</p>
+        </div>
+
+        <div class="card-grid card-grid-2" style="gap: 24px;">
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-title">3年内目标</div>
+                    <div class="phase-subtitle">跑通模型，建立底盘</div>
+                </div>
+                <div class="phase-body">
+                    <ul style="margin: 0;">
+                        <li>跑通<span class="highlight">1-2个样板项目</span></li>
+                        <li>跑通<span class="highlight">招商转化闭环</span></li>
+                        <li>跑通<span class="highlight">联合创始人和入驻客户体系</span></li>
+                        <li>跑通<span class="highlight">订单导入与资源撮合机制</span></li>
+                        <li>跑通<span class="highlight">基础企业家服务流程</span></li>
+                        <li>建立<span class="gold">公司化、标准化、可复制</span>的运营底盘</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phase-card">
+                <div class="phase-header" style="background: linear-gradient(135deg, var(--gold-deep), var(--gold-primary));">
+                    <div class="phase-title">5年内目标</div>
+                    <div class="phase-subtitle">形成平台，形成网络</div>
+                </div>
+                <div class="phase-body">
+                    <ul style="margin: 0;">
+                        <li>形成<span class="highlight">企业家平台基础形态</span></li>
+                        <li>形成<span class="highlight">会员/联合创始人/资源伙伴分层体系</span></li>
+                        <li>形成<span class="highlight">项目、活动、资源、订单、传播联动网络</span></li>
+                        <li>形成<span class="highlight">持续招商和持续合作能力</span></li>
+                        <li>形成可跨项目迁移的合作规则和服务机制</li>
+                        <li>形成<span class="gold">更强的区域品牌影响力</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第14页：三周期路径 -->
+<section class="page">
+    <span class="page-number">拾肆</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">路径</div>
+            <h2 class="page-title">三周期路径</h2>
+            <p class="page-subtitle">第一周期 / 第二周期 / 第三周期</p>
+        </div>
+
+        <div class="cycle-path">
+            <div class="cycle-item">
+                <span class="cycle-label">第一周期</span>
+                <div class="cycle-title">0-12周</div>
+                <div class="cycle-content">
+                    定位梳理 → 业务产品化<br>品牌传播 → 数字化升级
+                </div>
+            </div>
+            <div class="cycle-item">
+                <span class="cycle-label">第二周期</span>
+                <div class="cycle-title">1-3年</div>
+                <div class="cycle-content">
+                    沉淀机制<br>扩大样板<br>形成品牌
+                </div>
+            </div>
+            <div class="cycle-item">
+                <span class="cycle-label">第三周期</span>
+                <div class="cycle-title">3-5年</div>
+                <div class="cycle-content">
+                    平台化<br>生态化<br>区域化
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span class="divider-diamond">◆</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header">
+                <div class="phase-title">第一周期（0-12周）：定位梳理 → 业务产品化 → 品牌传播增长 → 数字化运营升级</div>
+            </div>
+            <div class="phase-body">
+                <ul style="margin: 0;">
+                    <li>这一周期对应工作表中的第一阶段到第四阶段</li>
+                    <li>核心目标不是先做大，而是先把"<span class="highlight">晋文怎么说、怎么做、怎么交付</span>"统一起来</li>
+                    <li>通过四个连续阶段，完成定位、产品、品牌与系统的基础搭建</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header" style="background: linear-gradient(135deg, var(--gold-deep), var(--gold-primary));">
+                <div class="phase-title">第二周期（1-3年）：沉淀机制、扩大样板、形成品牌</div>
+            </div>
+            <div class="phase-body">
+                <ul style="margin: 0;">
+                    <li>让样板项目<span class="highlight">可复制</span></li>
+                    <li>让招商和资源组织形成<span class="highlight">固定机制</span></li>
+                    <li>让创始人资源逐步沉淀成<span class="highlight">公司资源</span></li>
+                    <li>让企业家服务从项目口径升级为<span class="highlight">平台口径</span></li>
+                    <li>让合作规则、分层机制和权益体系逐步<span class="highlight">稳定</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header" style="background: linear-gradient(135deg, #4A1515, var(--red-deep));">
+                <div class="phase-title">第三周期（3-5年）：平台化、生态化、区域化</div>
+            </div>
+            <div class="phase-body">
+                <ul style="margin: 0;">
+                    <li>从项目公司进化为<span class="highlight">区域型生态组织</span></li>
+                    <li>从资源撮合方进化为<span class="highlight">企业家平台承载方</span></li>
+                    <li>从单点项目合作进化为<span class="highlight">长期平台合作</span></li>
+                    <li>从云南本地项目落地进化为<span class="highlight">区域合作网络</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第15页：第一周期交付内容 -->
+<section class="page">
+    <span class="page-number">拾伍</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">交付</div>
+            <h2 class="page-title">第一周期交付内容</h2>
+            <p class="page-subtitle">对应第一阶段到第四阶段：先把定位、产品、品牌与系统跑通</p>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header">
+                <div class="phase-title">第一阶段：定位梳理（第1-4周）</div>
+            </div>
+            <div class="phase-body">
+                <ul style="margin: 0;">
+                    <li>董事长/总经理深度访谈 ×2次、业务负责人深度访谈 ×1次</li>
+                    <li>企业现有资料收集（公司介绍/PPT/物料/项目列表/合同模板/报价记录）</li>
+                    <li>资源盘点：政府/产业/渠道/专家资本四类资源清单</li>
+                    <li>竞争环境调研、业务现状梳理</li>
+                </ul>
+                <div style="margin-top: 16px;">
+                    <span class="tag">晋文产业定位报告</span>
+                    <span class="tag">晋文对外统一口径手册</span>
+                    <span class="tag">晋文品牌话语体系</span>
+                    <span class="tag tag-gold">定位共识Workshop确认书</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header" style="background: linear-gradient(135deg, var(--gold-deep), var(--gold-primary));">
+                <div class="phase-title">第二阶段：业务产品化（第4-8周）</div>
+            </div>
+            <div class="phase-body">
+                <ul style="margin: 0;">
+                    <li>现有服务全面梳理、历史合作项目整理</li>
+                    <li>合作模式分类整理、供需适配核心能力具象化</li>
+                    <li>产品包分级设计（基础版/标准版/定制版）</li>
+                    <li>标杆案例资料收集（3-5个代表性项目）</li>
+                    <li>标准化产品包手册、商务转化SOP手册、内部试运行</li>
+                </ul>
+                <div style="margin-top: 16px;">
+                    <span class="tag">供需适配产品说明书</span>
+                    <span class="tag">晋文标准化产品包手册</span>
+                    <span class="tag">晋文商务转化SOP手册</span>
+                    <span class="tag tag-gold">晋文标杆案例包</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header">
+                <div class="phase-title">第三阶段：品牌与传播增长（第4-8周，并行）</div>
+            </div>
+            <div class="phase-body">
+                <ul style="margin: 0;">
+                    <li>现有VI资料收集、VI审计与建议、logo升级设计</li>
+                    <li>标准色彩规范、字体规范、应用场景模板设计</li>
+                    <li>政府汇报版PPT、招商合作版PPT、企业介绍版PPT</li>
+                    <li>官方宣传册、合作方案模板、IP打造路径规划</li>
+                    <li>自媒体矩阵运营方案、10条储备内容产出</li>
+                </ul>
+                <div style="margin-top: 16px;">
+                    <span class="tag">晋文品牌VI手册</span>
+                    <span class="tag">三套官方PPT</span>
+                    <span class="tag">宣传册</span>
+                    <span class="tag">合作方案模板</span>
+                    <span class="tag tag-gold">首次招商物料</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-header" style="background: linear-gradient(135deg, #3A3530, #2A2520);">
+                <div class="phase-title">第四阶段：数字化运营升级（第4-12周，并行）</div>
+            </div>
+            <div class="phase-body">
+                <ul style="margin: 0;">
+                    <li>业务痛点调研（资源管理/客户跟进/内容生产/客户服务）</li>
+                    <li>数字化成熟度评估、系统选型建议</li>
+                    <li>产业资源智能台账系统部署、智能CRM系统部署</li>
+                    <li>AI工具包开通（智能应答机器人/批量邀约/精准触达）</li>
+                    <li>数字人定制（可选）</li>
+                </ul>
+                <div style="margin-top: 16px;">
+                    <span class="tag">产业资源智能台账系统</span>
+                    <span class="tag">智能CRM系统</span>
+                    <span class="tag">智能AI工具包</span>
+                    <span class="tag">数字人（可选）</span>
+                    <span class="tag tag-gold">智能化平台规划方案</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第16页：统一路径 -->
+<section class="page">
+    <span class="page-number">拾陆</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">路径</div>
+            <h2 class="page-title">统一路径</h2>
+            <p class="page-subtitle">先做成什么，再沉淀什么，最后长成什么</p>
+        </div>
+
+        <div style="display: flex; align-items: stretch; gap: 0; margin: 48px 0; justify-content: center;">
+            <div style="flex: 1; max-width: 260px; background: linear-gradient(135deg, var(--red-primary), var(--red-deep)); color: white; padding: 36px 28px; text-align: center;">
+                <div style="font-size: 0.72rem; opacity: 0.7; margin-bottom: 10px; letter-spacing: 0.1em;">先把</div>
+                <div style="font-family: 'Noto Serif SC', serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 6px;">项目</div>
+                <div style="font-size: 0.82rem; opacity: 0.9;">做成样板</div>
+            </div>
+            <div style="display: flex; align-items: center; padding: 0 14px; font-size: 1.3rem; color: var(--gold-primary);">→</div>
+            <div style="flex: 1; max-width: 260px; background: linear-gradient(135deg, var(--gold-primary), var(--gold-deep)); color: white; padding: 36px 28px; text-align: center;">
+                <div style="font-size: 0.72rem; opacity: 0.85; margin-bottom: 10px; letter-spacing: 0.1em;">再把</div>
+                <div style="font-family: 'Noto Serif SC', serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 6px;">资源</div>
+                <div style="font-size: 0.82rem;">沉淀成机制</div>
+            </div>
+            <div style="display: flex; align-items: center; padding: 0 14px; font-size: 1.3rem; color: var(--gold-primary);">→</div>
+            <div style="flex: 1; max-width: 260px; background: linear-gradient(135deg, var(--red-deep), #4A1515); color: white; padding: 36px 28px; text-align: center;">
+                <div style="font-size: 0.72rem; opacity: 0.7; margin-bottom: 10px; letter-spacing: 0.1em;">再把</div>
+                <div style="font-family: 'Noto Serif SC', serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 6px;">客户</div>
+                <div style="font-size: 0.82rem; opacity: 0.9;">沉淀成平台</div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">这条路径的含义是</h3>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-title">项目先跑通</div>
+                <div class="timeline-content">确保有真实场景和真实结果</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-title">资源再沉淀</div>
+                <div class="timeline-content">确保不是靠个人关系，而是形成公司能力</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-title">客户再沉淀</div>
+                <div class="timeline-content">确保不是一次性成交，而是形成平台资产</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第17页：总结 -->
+<section class="page">
+    <span class="page-number">拾柒</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">总结</div>
+            <h2 class="page-title">总结</h2>
+            <p class="page-subtitle">晋文的目标，不是讲大，而是做实</p>
+        </div>
+
+        <div class="summary-grid">
+            <div class="summary-item">
+                <div class="summary-number">01</div>
+                <div class="summary-title">角色要讲准</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-number">02</div>
+                <div class="summary-title">边界要讲清</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-number">03</div>
+                <div class="summary-title">客户要分层</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-number">04</div>
+                <div class="summary-title">项目要成样</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-number">05</div>
+                <div class="summary-title">资源要沉淀</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-number">06</div>
+                <div class="summary-title">平台要长出来</div>
+            </div>
+        </div>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span class="divider-diamond">◆</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <h3 style="font-size: 0.7rem; font-weight: 600; color: var(--gold-primary); letter-spacing: 0.2em; margin-bottom: 20px; text-transform: uppercase;">这份明确背景的最终意义</h3>
+
+        <div class="core-box" style="text-align: center;">
+            <div class="core-box-content" style="text-align: center;">
+                不是为了把话说满，而是为了让晋文后续所有<span class="highlight">招商、合作、汇报、组织和平台化动作</span>，都有<span class="gold">同一个底层逻辑</span>。
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第18页：结语 -->
+<section class="page">
+    <span class="page-number">拾捌</span>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-number-label">结语</div>
+            <h2 class="page-title">结语</h2>
+        </div>
+
+        <div class="big-quote" style="margin-bottom: 44px;">
+            <p>晋文的核心，是把云南的<br><br>
+            <span style="opacity: 0.85;">本地深耕力</span> +
+            <span style="color: var(--gold-light);">全球企业家资源</span> +
+            <span style="opacity: 0.85;">项目落地能力</span> +
+            <span style="color: var(--gold-light);">文化组织能力</span><br><br>
+            合成为一个<span style="font-size: 1.7rem; font-weight: 700;">可持续成长的区域生态组织</span></p>
+        </div>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span class="divider-diamond">◆</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <ul style="margin-top: 36px;">
+            <li>晋文<span class="highlight">不是只做项目</span>，也不是只做招商</li>
+            <li>晋文<span class="highlight">不是只做资源连接</span>，也不是只做品牌表达</li>
+            <li>晋文真正要做的，是把云南主场的深耕力、全球企业家资源和项目落地能力，逐步沉淀成一个<span class="gold">企业家平台和区域型生态组织</span></li>
+        </ul>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="page-footer">
+    <div style="width: 50px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-primary), transparent); margin: 0 auto 28px auto;"></div>
+    <p class="footer-quote">"让传统企业，更适合这个时代"</p>
+    <div style="width: 50px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-primary), transparent); margin: 0 auto 20px auto;"></div>
+    <p class="footer-note">晋文战略目标 · 统一对外口径文件</p>
+</footer>
+
+</body>
+</html>
